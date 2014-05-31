@@ -1,0 +1,44 @@
+/**
+ * Schrijf hier de styling voor unieke pages of posts. Denk bijvoorbeeld aan page-home, page-41 of post-31
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.3.1
+ */
+
+/* Home 
+   ========================================================================== */
+
+.home {
+  ul.recent-posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      margin: 0;
+
+      span {
+        line-height: 22px;
+      }
+
+      .date {
+        width: 100px;
+        float: left;
+      }
+      .title {
+        width: 200px;
+        float: left;
+      }
+      .type {
+        float: right;
+        color: rgb(153, 153, 153);
+        font-size: 13px;
+        font-style: italic;
+      }
+    }
+  }
+}
+

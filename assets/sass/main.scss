@@ -1,0 +1,74 @@
+/**
+ * Hoofdbestand voor de frontend CSS.
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.3.1
+ */
+
+/* Imports
+   ========================================================================== */
+
+@import "variables";
+
+/* Versie 
+   ========================================================================== */
+  
+.sass-version {
+	content: $version;
+}
+
+/* We importeren de compass reset, deze is inclusief de Eric Meyer reset */
+@import "compass/reset";
+/* We importeren CSS3 mixins zodat alle vormen van pre-fixes gegenereerd worden */
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/utilities/general/clearfix";
+
+@import "base/mixins";
+@import "base/text";
+@import "base/structure";
+@import "base/controls";
+@import "base/pages";
+@import "base/plugins";
+
+@import "sections/header";
+@import "sections/widgets";
+@import "sections/sidebar";
+@import "sections/entry";
+@import "sections/footer";
+
+@import "woocommerce/generic";
+@import "woocommerce/product";
+@import "woocommerce/cart";
+@import "woocommerce/checkout";
+@import "woocommerce/account";
+
+@import "misc/browsers";
+
+/* Overige
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+.clear {
+	@extend .clearfix;
+}
+
+/* Development
+   ========================================================================== */
+
+.debug pre {
+	background-color: #fff;
+}

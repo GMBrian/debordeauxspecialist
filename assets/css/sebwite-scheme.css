@@ -1,0 +1,1937 @@
+/* line 5, ../sass/sebwite-scheme.scss */
+html {
+  background: #f1f1f1;
+}
+
+/* line 8, ../sass/sebwite-scheme.scss */
+input[type=checkbox], input[type=radio] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 15, ../sass/sebwite-scheme.scss */
+input[type=checkbox]:checked:before {
+  color: #1e8cbe;
+}
+
+/* line 18, ../sass/sebwite-scheme.scss */
+input[type=radio]:checked:before {
+  background-color: #1e8cbe;
+}
+
+/* line 21, ../sass/sebwite-scheme.scss */
+.wp-core-ui input[type=reset]:hover, .wp-core-ui input[type=reset]:active {
+  color: #96cc19;
+}
+
+/* line 24, ../sass/sebwite-scheme.scss */
+.wp-ui-primary {
+  color: #fff;
+  background-color: #333;
+}
+
+/* line 28, ../sass/sebwite-scheme.scss */
+.wp-ui-text-primary {
+  color: #333;
+}
+
+/* line 31, ../sass/sebwite-scheme.scss */
+.wp-ui-highlight {
+  color: #fff;
+  background-color: #1e8cbe;
+}
+
+/* line 35, ../sass/sebwite-scheme.scss */
+.wp-ui-text-highlight {
+  color: #1e8cbe;
+}
+
+/* line 38, ../sass/sebwite-scheme.scss */
+.wp-ui-notification {
+  color: #fff;
+  background-color: #D54E21;
+}
+
+/* line 42, ../sass/sebwite-scheme.scss */
+.wp-ui-text-notification {
+  color: #D54E21;
+}
+
+/* line 45, ../sass/sebwite-scheme.scss */
+.wp-ui-text-icon {
+  color: #999;
+}
+
+/* line 48, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-has-current-submenu .wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu {
+  background-color: #333;
+}
+
+/* line 51, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-has-current-submenu .wp-submenu a, .no-js li.wp-has-current-submenu:hover .wp-submenu a, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open a, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+  color: #bbb;
+}
+
+/* line 54, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:focus, #adminmenu .wp-has-current-submenu .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu a:focus, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open a:hover, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open a:focus, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover, #adminmenu .wp-has-current-submenu.opensub .wp-submenu a:focus, .no-js li.wp-has-current-submenu:hover .wp-submenu a:hover, .no-js li.wp-has-current-submenu:hover .wp-submenu a:focus, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:focus, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:hover, .folded #adminmenu .wp-has-current-submenu .wp-submenu a:focus {
+  background: 0 0;
+  color: #96cc19;
+}
+
+/* line 58, ../sass/sebwite-scheme.scss */
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.current:after {
+  border-right-color: #f1f1f1;
+}
+
+/* line 61, ../sass/sebwite-scheme.scss */
+.row-actions {
+  color: #ddd;
+}
+
+/* line 64, ../sass/sebwite-scheme.scss */
+.find-box-search, .find-box-buttons {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dfdfdf;
+}
+
+/* line 68, ../sass/sebwite-scheme.scss */
+.find-box {
+  background-color: #444;
+}
+
+/* line 71, ../sass/sebwite-scheme.scss */
+.find-box-head {
+  color: #eee;
+}
+
+/* line 74, ../sass/sebwite-scheme.scss */
+.find-box-inside {
+  background-color: #fff;
+}
+
+/* line 77, ../sass/sebwite-scheme.scss */
+a.page-numbers:hover {
+  border-color: #999;
+}
+
+/* line 80, ../sass/sebwite-scheme.scss */
+body, #wpbody, .form-table .pre, .ui-autocomplete li a {
+  color: #444;
+}
+
+/* line 83, ../sass/sebwite-scheme.scss */
+body > #upload-menu {
+  border-bottom-color: #fff;
+}
+
+/* line 86, ../sass/sebwite-scheme.scss */
+#postcustomstuff table, #your-profile fieldset, #rightnow, div.dashboard-widget, #dashboard-widgets p.dashboard-widget-links {
+  border-color: #ccc;
+}
+
+/* line 89, ../sass/sebwite-scheme.scss */
+#dashboard-widgets h4 {
+  color: #222;
+}
+
+/* line 92, ../sass/sebwite-scheme.scss */
+#poststuff .inside label.spam, #poststuff .inside label.deleted {
+  color: red;
+}
+
+/* line 95, ../sass/sebwite-scheme.scss */
+#poststuff .inside label.waiting {
+  color: orange;
+}
+
+/* line 98, ../sass/sebwite-scheme.scss */
+#poststuff .inside label.approved {
+  color: green;
+}
+
+/* line 101, ../sass/sebwite-scheme.scss */
+#postcustomstuff table {
+  border-color: #dfdfdf;
+  background-color: #f9f9f9;
+}
+
+/* line 105, ../sass/sebwite-scheme.scss */
+#postcustomstuff thead th {
+  background-color: #f1f1f1;
+}
+
+/* line 108, ../sass/sebwite-scheme.scss */
+table.widefat {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+/* line 112, ../sass/sebwite-scheme.scss */
+th .comment-grey-bubble:before {
+  color: #444;
+}
+
+/* line 115, ../sass/sebwite-scheme.scss */
+.sorting-indicator:before {
+  color: #444;
+}
+
+/* line 118, ../sass/sebwite-scheme.scss */
+div.dashboard-widget-error {
+  background-color: #c43;
+}
+
+/* line 121, ../sass/sebwite-scheme.scss */
+div.dashboard-widget-notice {
+  background-color: #cfe1ef;
+}
+
+/* line 124, ../sass/sebwite-scheme.scss */
+div.dashboard-widget-submit {
+  border-top-color: #ccc;
+}
+
+/* line 127, ../sass/sebwite-scheme.scss */
+ul.category-tabs li {
+  border-color: transparent;
+}
+
+/* line 130, ../sass/sebwite-scheme.scss */
+div.tabs-panel, .wp-tab-panel, ul.add-menu-item-tabs li.tabs, .wp-tab-active {
+  border-color: #dfdfdf;
+  background-color: #fdfdfd;
+}
+
+/* line 134, ../sass/sebwite-scheme.scss */
+ul.category-tabs li.tabs {
+  border-color: #dfdfdf #dfdfdf #fdfdfd;
+}
+
+/* line 137, ../sass/sebwite-scheme.scss */
+ul.category-tabs li.tabs, ul.add-menu-item-tabs li.tabs, .wp-tab-active {
+  background-color: #fdfdfd;
+}
+
+/* line 140, ../sass/sebwite-scheme.scss */
+kbd, code {
+  background: #eaeaea;
+  background: rgba(0, 0, 0, 0.07);
+}
+
+/* line 144, ../sass/sebwite-scheme.scss */
+textarea, input[type=text], input[type=password], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=url], .titlewrap input, select {
+  border-color: #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+/* line 148, ../sass/sebwite-scheme.scss */
+textarea:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=url]:focus, input[type=checkbox]:focus, input[type=radio]:focus, select:focus, #widgets-left .widget-in-question .widget-top, #available-widgets .widget-top:hover, #widgets-right .widget-top:hover, #widgets-left .widget-top:hover, .menu-item-bar .menu-item-handle:hover {
+  border-color: #999;
+}
+
+/* line 151, ../sass/sebwite-scheme.scss */
+input:disabled, input.disabled, textarea:disabled, textarea.disabled {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  border-color: rgba(222, 222, 222, 0.75);
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/* line 158, ../sass/sebwite-scheme.scss */
+#plugin-information .action-button a, #plugin-information .action-button a:hover, #plugin-information .action-button a:visited {
+  color: #fff;
+}
+
+/* line 161, ../sass/sebwite-scheme.scss */
+.accordion-section-content {
+  border-left: 0;
+  border-right: 0;
+}
+
+/* line 165, ../sass/sebwite-scheme.scss */
+.widefat tfoot th {
+  border-bottom: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* line 169, ../sass/sebwite-scheme.scss */
+.widefat thead th {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* line 172, ../sass/sebwite-scheme.scss */
+.form-table th, .form-wrap label {
+  color: #222;
+}
+
+/* line 175, ../sass/sebwite-scheme.scss */
+.form-table.editcomment td {
+  border-bottom: 0;
+}
+
+/* line 178, ../sass/sebwite-scheme.scss */
+.description, .form-wrap p {
+  color: #666;
+}
+
+/* line 181, ../sass/sebwite-scheme.scss */
+strong .post-com-count span {
+  background-color: #659003;
+}
+
+/* line 184, ../sass/sebwite-scheme.scss */
+.post-com-count:after {
+  border-top: 5px solid #bbb;
+  border-right: 5px solid transparent;
+}
+
+/* line 188, ../sass/sebwite-scheme.scss */
+strong .post-com-count:after {
+  border-top: 5px solid #0076a0;
+}
+
+/* line 191, ../sass/sebwite-scheme.scss */
+.post-com-count:hover:after {
+  border-top: 5px solid #96cc19;
+}
+
+/* line 194, ../sass/sebwite-scheme.scss */
+.sorthelper {
+  background-color: #ccf3fa;
+}
+
+/* line 197, ../sass/sebwite-scheme.scss */
+.ac_match, .subsubsub a.current {
+  color: #000;
+}
+
+/* line 200, ../sass/sebwite-scheme.scss */
+h2, h3 {
+  color: #222;
+}
+
+/* line 203, ../sass/sebwite-scheme.scss */
+.wrap .add-new-h2, .wrap .add-new-h2:active {
+  background: #e0e0e0;
+}
+
+/* line 206, ../sass/sebwite-scheme.scss */
+.wrap .add-new-h2:hover {
+  background: #96cc19;
+  color: #fff;
+}
+
+/* line 210, ../sass/sebwite-scheme.scss */
+.subtitle {
+  color: #777;
+}
+
+/* line 213, ../sass/sebwite-scheme.scss */
+.ac_over {
+  background-color: #f0f0b8;
+}
+
+/* line 216, ../sass/sebwite-scheme.scss */
+.ac_results {
+  background-color: #fff;
+  border-color: gray;
+}
+
+/* line 220, ../sass/sebwite-scheme.scss */
+.ac_results li {
+  color: #101010;
+}
+
+/* line 223, ../sass/sebwite-scheme.scss */
+.alternate, .alt {
+  background-color: #f9f9f9;
+}
+
+/* line 226, ../sass/sebwite-scheme.scss */
+.available-theme a.screenshot {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+/* line 230, ../sass/sebwite-scheme.scss */
+#current-theme {
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 233, ../sass/sebwite-scheme.scss */
+.bar {
+  background-color: #e8e8e8;
+  border-right-color: #99d;
+}
+
+/* line 237, ../sass/sebwite-scheme.scss */
+.form-invalid {
+  background-color: #ffebe8 !important;
+}
+
+/* line 240, ../sass/sebwite-scheme.scss */
+.form-invalid input, .form-invalid select {
+  border-color: #cc0000 !important;
+}
+
+/* line 243, ../sass/sebwite-scheme.scss */
+.submit {
+  border: 0;
+}
+
+/* line 246, ../sass/sebwite-scheme.scss */
+.highlight {
+  background-color: #e4f2fd;
+  color: #000;
+}
+
+/* line 250, ../sass/sebwite-scheme.scss */
+.howto, .nonessential, #edit-slug-box, .form-input-tip, .subsubsub {
+  color: #666;
+}
+
+/* line 253, ../sass/sebwite-scheme.scss */
+.media-upload-form label.form-help, td.help {
+  color: #9a9a9a;
+}
+
+/* line 256, ../sass/sebwite-scheme.scss */
+.ui-autocomplete {
+  border-color: #aaa;
+  background-color: #efefef;
+}
+
+/* line 260, ../sass/sebwite-scheme.scss */
+.ui-autocomplete li a.ui-state-focus {
+  background-color: #ddd;
+}
+
+/* line 263, ../sass/sebwite-scheme.scss */
+.post-com-count {
+  color: #fff;
+}
+
+/* line 266, ../sass/sebwite-scheme.scss */
+.post-com-count span {
+  background-color: #bbb;
+  color: #fff;
+}
+
+/* line 270, ../sass/sebwite-scheme.scss */
+.post-com-count:hover span {
+  background-color: #96cc19;
+}
+
+/* line 273, ../sass/sebwite-scheme.scss */
+.quicktags, .search {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* line 277, ../sass/sebwite-scheme.scss */
+.side-info h5 {
+  border-bottom-color: #dadada;
+}
+
+/* line 280, ../sass/sebwite-scheme.scss */
+.side-info ul {
+  color: #666;
+}
+
+/* line 283, ../sass/sebwite-scheme.scss */
+a:hover, a:active {
+  color: #96cc19;
+}
+
+/* line 286, ../sass/sebwite-scheme.scss */
+a:focus {
+  color: #124964;
+}
+
+/* line 289, ../sass/sebwite-scheme.scss */
+#adminmenu a:hover, #adminmenu li.menu-top > a:focus, #adminmenu .wp-submenu a:hover, #rightnow a:hover, #media-upload a.del-link:hover, div.dashboard-widget-submit input:hover, .subsubsub a:hover, .subsubsub a.current:hover, .ui-tabs-nav a:hover {
+  color: #96cc19;
+}
+
+/* line 292, ../sass/sebwite-scheme.scss */
+#the-comment-list .comment-item {
+  border: 0;
+}
+
+/* line 295, ../sass/sebwite-scheme.scss */
+#side-sortables .category-tabs .tabs a, #side-sortables .add-menu-item-tabs .tabs a, .wp-tab-bar .wp-tab-active a {
+  color: #333;
+}
+
+/* line 298, ../sass/sebwite-scheme.scss */
+#rightnow .rbutton {
+  background-color: #ebebeb;
+  color: #264761;
+}
+
+/* line 302, ../sass/sebwite-scheme.scss */
+p.submit {
+  border-top-color: #dfdfdf;
+}
+
+/* line 305, ../sass/sebwite-scheme.scss */
+.submitbox .submit {
+  background-color: #464646;
+  color: #ccc;
+}
+
+/* line 309, ../sass/sebwite-scheme.scss */
+table.widefat span.delete a, table.widefat span.trash a, table.widefat span.spam a, .plugins a.delete, #all-plugins-table .plugins a.delete, #search-plugins-table .plugins a.delete, .submitbox .submitdelete, #media-items a.delete, #media-items a.delete-permanently, #nav-menu-footer .menu-delete {
+  color: #a00;
+}
+
+/* line 312, ../sass/sebwite-scheme.scss */
+table.widefat span.delete a:hover, table.widefat span.trash a:hover, table.widefat span.spam a:hover, .plugins a.delete:hover, #all-plugins-table .plugins a.delete:hover, #search-plugins-table .plugins a.delete:hover, .submitbox .submitdelete:hover, #media-items a.delete:hover, #media-items a.delete-permanently:hover, #nav-menu-footer .menu-delete:hover {
+  color: red;
+}
+
+/* line 315, ../sass/sebwite-scheme.scss */
+#normal-sortables .submitbox .submitdelete:hover {
+  color: #000;
+  background-color: red;
+  border-bottom-color: red;
+}
+
+/* line 320, ../sass/sebwite-scheme.scss */
+.tablenav .dots {
+  border-color: transparent;
+}
+
+/* line 323, ../sass/sebwite-scheme.scss */
+.tablenav .next, .tablenav .prev {
+  border-color: transparent;
+  color: #659003;
+}
+
+/* line 327, ../sass/sebwite-scheme.scss */
+.tablenav .next:hover, .tablenav .prev:hover {
+  border-color: transparent;
+  color: #96cc19;
+}
+
+/* line 331, ../sass/sebwite-scheme.scss */
+div.updated, .login .message, .press-this #message {
+  background-color: #fff;
+  border-left: 4px solid #7ad03a;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 337, ../sass/sebwite-scheme.scss */
+#update-nag, .update-nag {
+  background-color: #fff;
+  border-left: 4px solid #ffba00;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 343, ../sass/sebwite-scheme.scss */
+div.error, .login #login_error {
+  background: #fff;
+  border-left: 4px solid #dd3d36;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 349, ../sass/sebwite-scheme.scss */
+.update-message {
+  color: #000;
+}
+
+/* line 352, ../sass/sebwite-scheme.scss */
+a.page-numbers {
+  border-bottom-color: #b8d3e2;
+}
+
+/* line 355, ../sass/sebwite-scheme.scss */
+.commentlist li {
+  border-bottom-color: #ccc;
+}
+
+/* line 358, ../sass/sebwite-scheme.scss */
+.widefat td, .widefat th {
+  color: #555;
+}
+
+/* line 361, ../sass/sebwite-scheme.scss */
+.widefat p, .widefat ol, .widefat ul {
+  color: #333;
+}
+
+/* line 364, ../sass/sebwite-scheme.scss */
+.widefat thead tr th, .widefat tfoot tr th, h3.dashboard-widget-title, h3.dashboard-widget-title span, h3.dashboard-widget-title small {
+  color: #333;
+}
+
+/* line 367, ../sass/sebwite-scheme.scss */
+th.manage-column a, th.sortable a:hover, th.sortable a:active, th.sortable a:focus {
+  color: #333;
+}
+
+/* line 370, ../sass/sebwite-scheme.scss */
+th.sortable a:focus {
+  background: #e1e1e1;
+}
+
+/* line 373, ../sass/sebwite-scheme.scss */
+h3.dashboard-widget-title small a {
+  color: #d7d7d7;
+}
+
+/* line 376, ../sass/sebwite-scheme.scss */
+h3.dashboard-widget-title small a:hover {
+  color: #fff;
+}
+
+/* line 379, ../sass/sebwite-scheme.scss */
+a, #the-comment-list p.comment-author strong a, #media-upload a.del-link, #media-items a.delete, #media-items a.delete-permanently, .plugins a.delete, .ui-tabs-nav a, .plugins .inactive a {
+  color: #659003;
+  -webkit-transition-property: border, background, color;
+  -moz-transition-property: border, background, color;
+  transition-property: border, background, color;
+  -webkit-transition-duration: .05s;
+  -moz-transition-duration: .05s;
+  transition-duration: .05s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 391, ../sass/sebwite-scheme.scss */
+.wp-list-table a, .media-router a {
+  -moz-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* line 396, ../sass/sebwite-scheme.scss */
+#adminmenu a {
+  color: #eee;
+}
+
+/* line 399, ../sass/sebwite-scheme.scss */
+#adminmenu .awaiting-mod, #adminmenu .update-plugins, #sidemenu a .update-plugins, #rightnow .reallynow {
+  background-color: #d54e21;
+  color: #fff;
+}
+
+/* line 403, ../sass/sebwite-scheme.scss */
+#plugin-information .action-button {
+  background-color: #96cc19;
+  color: #fff;
+}
+
+/* line 407, ../sass/sebwite-scheme.scss */
+#adminmenu li.current a .awaiting-mod, #adminmenu li a.wp-has-current-submenu .update-plugins {
+  background-color: #96cc19;
+  color: #fff;
+}
+
+/* line 411, ../sass/sebwite-scheme.scss */
+div#media-upload-header, div#plugin-information-header {
+  background-color: #f9f9f9;
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 415, ../sass/sebwite-scheme.scss */
+#currenttheme img {
+  border-color: #666;
+}
+
+/* line 418, ../sass/sebwite-scheme.scss */
+input.readonly, textarea.readonly {
+  background-color: #ddd;
+}
+
+/* line 421, ../sass/sebwite-scheme.scss */
+#editable-post-name {
+  background-color: #fffbcc;
+}
+
+/* line 424, ../sass/sebwite-scheme.scss */
+#edit-slug-box strong, .tablenav .displaying-num, #submitted-on, .submitted-on {
+  color: #777;
+}
+
+/* line 427, ../sass/sebwite-scheme.scss */
+.plugins .inactive a:hover {
+  color: #96cc19;
+}
+
+/* line 430, ../sass/sebwite-scheme.scss */
+#wpfooter {
+  color: #777;
+  border-color: transparent;
+}
+
+/* line 434, ../sass/sebwite-scheme.scss */
+.imgedit-group, #media-items .media-item, .media-item .describe {
+  border-color: #dfdfdf;
+}
+
+/* line 437, ../sass/sebwite-scheme.scss */
+.plugins .plugin-description p, .plugins .plugin-version-author-uri {
+  color: #333;
+}
+
+/* line 440, ../sass/sebwite-scheme.scss */
+.plugins .inactive .plugin-title strong {
+  color: #333;
+}
+
+/* line 443, ../sass/sebwite-scheme.scss */
+.plugin-update-tr .plugin-update {
+  border: 0;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 448, ../sass/sebwite-scheme.scss */
+.plugin-update-tr .update-message {
+  background-color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* line 452, ../sass/sebwite-scheme.scss */
+tr.active.update + tr.plugin-update-tr .plugin-update .update-message {
+  background-color: #fcf3ef;
+}
+
+/* line 455, ../sass/sebwite-scheme.scss */
+.plugin-update-tr .update-message:before {
+  color: #d54e21;
+}
+
+/* line 458, ../sass/sebwite-scheme.scss */
+.plugins, .plugins th, .plugins td {
+  color: #000;
+}
+
+/* line 461, ../sass/sebwite-scheme.scss */
+.plugins .inactive a {
+  color: #579;
+}
+
+/* line 464, ../sass/sebwite-scheme.scss */
+.plugins tr {
+  background: #fff;
+}
+
+/* line 467, ../sass/sebwite-scheme.scss */
+.plugins .inactive td, .plugins .inactive th, .plugins .active td, .plugins .active th, .plugin-install #the-list td {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 471, ../sass/sebwite-scheme.scss */
+.plugins .update td, .plugins .update th {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 475, ../sass/sebwite-scheme.scss */
+.plugins .active td, .plugins .active th, tr.active + tr.plugin-update-tr .plugin-update {
+  background-color: #f7fcfe;
+}
+
+/* line 478, ../sass/sebwite-scheme.scss */
+.plugins .active.update td, .plugins .active.update th, tr.active.update + tr.plugin-update-tr .plugin-update, #activity-widget #the-comment-list .unapproved {
+  background-color: #fefaf7;
+}
+
+/* line 481, ../sass/sebwite-scheme.scss */
+.plugins tr.active.plugin-update-tr + tr.inactive th, .plugins tr.active.plugin-update-tr + tr.inactive td, .plugins tr.active + tr.inactive th, .plugins tr.active + tr.inactive td {
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02), inset 0 -1px 0 #e1e1e1;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02), inset 0 -1px 0 #e1e1e1;
+}
+
+/* line 486, ../sass/sebwite-scheme.scss */
+.plugins tr.active + tr.inactive.update th, .plugins tr.active + tr.inactive.update td {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 490, ../sass/sebwite-scheme.scss */
+.plugins .active th.check-column {
+  border-left: 4px solid #96cc19;
+}
+
+/* line 493, ../sass/sebwite-scheme.scss */
+.plugins .active.update th.check-column, .plugins .active.update + .plugin-update-tr .plugin-update {
+  border-left: 4px solid #d54e21;
+}
+
+/* line 496, ../sass/sebwite-scheme.scss */
+.post-state-format:before, .post-format-icon:before {
+  color: #ddd;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+/* line 502, ../sass/sebwite-scheme.scss */
+input[type=radio]:checked + label:before {
+  color: #888;
+}
+
+/* line 505, ../sass/sebwite-scheme.scss */
+a.post-state-format:hover:before, a.post-format-icon:hover:before {
+  color: #96cc19;
+}
+
+/* line 508, ../sass/sebwite-scheme.scss */
+#the-list tr:last-child td, #the-list tr:last-child th {
+  border-bottom: 0 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 513, ../sass/sebwite-scheme.scss */
+#the-comment-list tr.undo, #the-comment-list div.undo {
+  background-color: #f4f4f4;
+}
+
+/* line 516, ../sass/sebwite-scheme.scss */
+#the-comment-list .unapproved th, #the-comment-list .unapproved td {
+  background-color: #fefaf7;
+}
+
+/* line 519, ../sass/sebwite-scheme.scss */
+#the-comment-list .unapproved th.check-column {
+  border-left: 4px solid #d54e21;
+}
+
+/* line 522, ../sass/sebwite-scheme.scss */
+#the-comment-list .approve a {
+  color: #006505;
+}
+
+/* line 525, ../sass/sebwite-scheme.scss */
+#the-comment-list .unapprove a {
+  color: #d98500;
+}
+
+/* line 528, ../sass/sebwite-scheme.scss */
+#the-comment-list th, #the-comment-list td {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 532, ../sass/sebwite-scheme.scss */
+#activity-widget #the-comment-list .comment {
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* line 536, ../sass/sebwite-scheme.scss */
+#the-comment-list tr:last-child th, #the-comment-list tr:last-child td {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 540, ../sass/sebwite-scheme.scss */
+#the-comment-list tr.unapproved + tr.approved th, #the-comment-list tr.unapproved + tr.approved td {
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/* line 543, ../sass/sebwite-scheme.scss */
+#activity-widget .comments #the-comment-list .alt {
+  background-color: transparent;
+}
+
+/* line 546, ../sass/sebwite-scheme.scss */
+.welcome-panel p {
+  color: #777;
+}
+
+/* line 549, ../sass/sebwite-scheme.scss */
+.welcome-panel a {
+  text-decoration: none;
+}
+
+/* line 552, ../sass/sebwite-scheme.scss */
+.welcome-panel-column p {
+  color: #464646;
+}
+
+/* line 555, ../sass/sebwite-scheme.scss */
+.welcome-panel .welcome-icon:before {
+  color: #888;
+}
+
+/* line 558, ../sass/sebwite-scheme.scss */
+.widget-top, .menu-item-handle, .menu-item-settings, .widget-inside, .postbox, #menu-settings-column .accordion-container, #menu-management .menu-edit, .manage-menus, table.widefat, .stuffbox, p.popular-tags, .widgets-holder-wrap, .welcome-panel, .wp-editor-container, #post-status-info, .popular-tags, .feature-filter, .imgedit-group {
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* line 563, ../sass/sebwite-scheme.scss */
+#post-status-info {
+  border-top: 0;
+}
+
+/* line 566, ../sass/sebwite-scheme.scss */
+.postbox table.widefat {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 570, ../sass/sebwite-scheme.scss */
+.welcome-panel, .postbox, table.widefat, .wp-editor-container, .stuffbox, p.popular-tags, .widgets-holder-wrap, .popular-tags, .feature-filter, .imgedit-group {
+  background: #fff;
+}
+
+/* line 573, ../sass/sebwite-scheme.scss */
+.postbox h3, #namediv h3, #submitdiv h3 {
+  border-bottom: 1px solid #eee;
+}
+
+/* line 576, ../sass/sebwite-scheme.scss */
+.widget .widget-top, .menu-item-handle {
+  background: #fafafa;
+  color: #222;
+}
+
+/* line 580, ../sass/sebwite-scheme.scss */
+#misc-publishing-actions label[for=post_status]:before, #post-body #visibility:before, .curtime #timestamp:before, #post-body .misc-pub-revisions:before, span.wp-media-buttons-icon:before {
+  color: #888;
+}
+
+/* line 583, ../sass/sebwite-scheme.scss */
+#rightnow .youhave {
+  background-color: #f0f6fb;
+}
+
+/* line 586, ../sass/sebwite-scheme.scss */
+#rightnow a {
+  color: #448abd;
+}
+
+/* line 589, ../sass/sebwite-scheme.scss */
+#welcome-panel.welcome-panel .welcome-panel-close::before, .tagchecklist span a:before, #bulk-titles div a:before, .wp-pointer-buttons a.close:before {
+  background: 0 0;
+  color: #bbb;
+}
+
+/* line 593, ../sass/sebwite-scheme.scss */
+#welcome-panel.welcome-panel .welcome-panel-close:hover:before, .tagchecklist span a:hover:before, #bulk-titles div a:hover:before, .wp-pointer-buttons a.close:hover:before {
+  color: #c00;
+}
+
+/* line 596, ../sass/sebwite-scheme.scss */
+#screen-meta {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: 0;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
+}
+
+/* line 603, ../sass/sebwite-scheme.scss */
+#contextual-help-back {
+  background: #f6fbfd;
+}
+
+/* line 606, ../sass/sebwite-scheme.scss */
+.contextual-help-tabs a:hover {
+  color: #333;
+}
+
+/* line 609, ../sass/sebwite-scheme.scss */
+#contextual-help-back, .contextual-help-tabs .active a {
+  border-color: #e1e1e1;
+}
+
+/* line 612, ../sass/sebwite-scheme.scss */
+.contextual-help-tabs .active {
+  border-color: #96cc19;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* line 617, ../sass/sebwite-scheme.scss */
+.contextual-help-tabs .active, .contextual-help-tabs .active a, .contextual-help-tabs .active a:hover {
+  background: #f6fbfd;
+  color: #333;
+}
+
+/* line 621, ../sass/sebwite-scheme.scss */
+#screen-options-link-wrap, #contextual-help-link-wrap {
+  border: 1px solid #ddd;
+  border-top: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 628, ../sass/sebwite-scheme.scss */
+#screen-meta-links a {
+  color: #777;
+}
+
+/* line 631, ../sass/sebwite-scheme.scss */
+#screen-meta-links a:after {
+  color: #bbb;
+}
+
+/* line 634, ../sass/sebwite-scheme.scss */
+#screen-meta-links a:hover, #screen-meta-links a:active {
+  color: #333;
+}
+
+/* line 637, ../sass/sebwite-scheme.scss */
+#screen-meta-links a:focus {
+  border-color: #aaa;
+  color: #333;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* line 643, ../sass/sebwite-scheme.scss */
+#wphead {
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 646, ../sass/sebwite-scheme.scss */
+#wphead h1 a {
+  color: #464646;
+}
+
+/* line 649, ../sass/sebwite-scheme.scss */
+.file-error, abbr.required, .widget-control-remove:hover, table.widefat .delete a:hover, table.widefat .trash a:hover, table.widefat .spam a:hover {
+  color: red;
+}
+
+/* line 652, ../sass/sebwite-scheme.scss */
+#pass-strength-result {
+  background-color: #eee;
+  border-color: #dddddd !important;
+}
+
+/* line 656, ../sass/sebwite-scheme.scss */
+#pass-strength-result.bad {
+  background-color: #ffb78c;
+  border-color: #ff853c !important;
+}
+
+/* line 660, ../sass/sebwite-scheme.scss */
+#pass-strength-result.good {
+  background-color: #ffec8b;
+  border-color: #ffcc00 !important;
+}
+
+/* line 664, ../sass/sebwite-scheme.scss */
+#pass-strength-result.short {
+  background-color: #ffa0a0;
+  border-color: #f04040 !important;
+}
+
+/* line 668, ../sass/sebwite-scheme.scss */
+#pass-strength-result.strong {
+  background-color: #c3ff88;
+  border-color: #8dff1c !important;
+}
+
+/* line 672, ../sass/sebwite-scheme.scss */
+#post-status-info {
+  background-color: #f7f7f7;
+}
+
+/* line 675, ../sass/sebwite-scheme.scss */
+.widget-inside, .menu-item-settings {
+  background: #fff;
+}
+
+/* line 678, ../sass/sebwite-scheme.scss */
+.menu-item-settings {
+  border-top: 0;
+}
+
+/* line 681, ../sass/sebwite-scheme.scss */
+#titlediv #title {
+  background-color: #fff;
+}
+
+/* line 684, ../sass/sebwite-scheme.scss */
+#tTips p#tTips_inside {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* line 688, ../sass/sebwite-scheme.scss */
+#poststuff .inside .the-tagcloud {
+  border-color: #ddd;
+}
+
+/* line 691, ../sass/sebwite-scheme.scss */
+#adminmenuback, #adminmenuwrap, #adminmenu {
+  background-color: #222;
+}
+
+/* line 694, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-menu-separator {
+  background: transparent;
+  border-color: transparent;
+}
+
+/* line 698, ../sass/sebwite-scheme.scss */
+#adminmenu div.separator {
+  border-color: transparent;
+}
+
+/* line 701, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-menu-open {
+  border-color: #dfdfdf;
+}
+
+/* line 704, ../sass/sebwite-scheme.scss */
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+  background-color: #111;
+  color: #96cc19;
+}
+
+/* line 708, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+  border-right-color: #333;
+}
+
+/* line 711, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, .folded #adminmenu li.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, #adminmenu .wp-menu-arrow, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow div {
+  background: #659003;
+}
+
+/* line 714, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow {
+  border-top-color: #f9f9f9;
+  border-bottom-color: #dfdfdf;
+  background: transparent;
+}
+
+/* line 719, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow div {
+  background: #111;
+  border-color: #111;
+}
+
+/* line 723, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu li.current a.menu-top, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+  color: #fff;
+}
+
+/* line 726, ../sass/sebwite-scheme.scss */
+.folded #adminmenu li.wp-has-current-submenu, .folded #adminmenu li.current.menu-top {
+  border-color: #666;
+}
+
+/* line 729, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .opensub .wp-submenu li.current a, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:hover, #adminmenu .wp-submenu li.current a:focus {
+  color: #fff;
+  background: transparent;
+}
+
+/* line 733, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: #333;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 738, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-submenu a, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a, .folded #adminmenu .wp-has-current-submenu .wp-submenu a {
+  color: #bbb;
+}
+
+/* line 741, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-submenu .wp-submenu-head {
+  color: #fff;
+}
+
+/* line 744, ../sass/sebwite-scheme.scss */
+#collapse-menu {
+  color: #aaa;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+/* line 750, ../sass/sebwite-scheme.scss */
+#collapse-menu:hover {
+  color: #96cc19;
+}
+
+/* line 753, ../sass/sebwite-scheme.scss */
+#collapse-button div:after {
+  color: #aaa;
+}
+
+/* line 756, ../sass/sebwite-scheme.scss */
+#collapse-menu:hover #collapse-button div:after {
+  color: #96cc19;
+}
+
+/* line 759, ../sass/sebwite-scheme.scss */
+#adminmenu div.wp-menu-image:before {
+  color: #999;
+}
+
+/* line 762, ../sass/sebwite-scheme.scss */
+.icon16:before {
+  color: #999;
+}
+
+/* line 765, ../sass/sebwite-scheme.scss */
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+  color: #fff;
+}
+
+/* line 768, ../sass/sebwite-scheme.scss */
+#adminmenu li:hover div.wp-menu-image:before {
+  color: #96cc19;
+}
+
+/* line 771, ../sass/sebwite-scheme.scss */
+#adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu .current div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before {
+  color: #fff;
+}
+
+/* line 774, ../sass/sebwite-scheme.scss */
+.wp-full-overlay a.collapse-sidebar {
+  color: #777;
+}
+
+/* line 777, ../sass/sebwite-scheme.scss */
+.wp-full-overlay a.collapse-sidebar:hover {
+  color: #659003;
+}
+
+/* line 780, ../sass/sebwite-scheme.scss */
+.wp-full-overlay .collapse-sidebar-arrow:before {
+  background: #eee;
+}
+
+/* line 783, ../sass/sebwite-scheme.scss */
+table.diff .diff-deletedline del {
+  background-color: #f99;
+}
+
+/* line 786, ../sass/sebwite-scheme.scss */
+.ui-tooltip, .arrow::after {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 790, ../sass/sebwite-scheme.scss */
+.revisions-meta, .revisions-diff, .revisions.pinned .revisions-controls {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 794, ../sass/sebwite-scheme.scss */
+table.diff .diff-deletedline {
+  background-color: #ffe9e9;
+}
+
+/* line 797, ../sass/sebwite-scheme.scss */
+table.diff .diff-deletedline del {
+  background-color: #faa;
+}
+
+/* line 800, ../sass/sebwite-scheme.scss */
+table.diff .diff-addedline {
+  background-color: #e9ffe9;
+}
+
+/* line 803, ../sass/sebwite-scheme.scss */
+table.diff .diff-addedline ins {
+  background-color: #afa;
+}
+
+/* line 806, ../sass/sebwite-scheme.scss */
+.revisions-tooltip, .revisions-tooltip-arrow span {
+  border-color: #d7d7d7;
+  background-color: #fff;
+}
+
+/* line 810, ../sass/sebwite-scheme.scss */
+.revisions-tickmarks {
+  background-color: #fff;
+}
+
+/* line 813, ../sass/sebwite-scheme.scss */
+.revisions-tickmarks > div {
+  border-color: #aaa;
+}
+
+/* line 816, ../sass/sebwite-scheme.scss */
+.revisions.pinned .revisions-controls {
+  background: #fff;
+}
+
+/* line 819, ../sass/sebwite-scheme.scss */
+.revisions.pinned .revisions-meta {
+  box-shadow: none;
+}
+
+/* line 822, ../sass/sebwite-scheme.scss */
+.wp-slider.ui-slider {
+  border-color: #d7d7d7;
+}
+
+/* line 825, ../sass/sebwite-scheme.scss */
+.wp-slider .ui-slider-handle, .wp-slider .ui-slider-handle.ui-state-hover, .wp-slider .ui-slider-handle.focus {
+  background: #96cc19;
+  border: 1px solid #659003;
+  -webkit-box-shadow: inset 0 1px 0 #78c8e6, 0 1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 #78c8e6, 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* line 831, ../sass/sebwite-scheme.scss */
+.wp-slider .ui-slider-handle:before {
+  color: #fff;
+}
+
+/* line 834, ../sass/sebwite-scheme.scss */
+#sidemenu a {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 839, ../sass/sebwite-scheme.scss */
+#sidemenu a.current {
+  background-color: #f1f1f1;
+  border-color: #dfdfdf #dfdfdf #f1f1f1;
+  color: #000;
+}
+
+/* line 844, ../sass/sebwite-scheme.scss */
+#replyerror {
+  border-color: #ddd;
+  background-color: #f9f9f9;
+}
+
+/* line 848, ../sass/sebwite-scheme.scss */
+.vim-current, .vim-current th, .vim-current td {
+  background-color: #e4f2fd !important;
+}
+
+/* line 851, ../sass/sebwite-scheme.scss */
+#plugin-information {
+  height: auto;
+}
+
+/* line 854, ../sass/sebwite-scheme.scss */
+#plugin-information .fyi ul {
+  background-color: #eaf3fa;
+}
+
+/* line 857, ../sass/sebwite-scheme.scss */
+#plugin-information .fyi h2.mainheader {
+  background-color: #cee1ef;
+}
+
+/* line 860, ../sass/sebwite-scheme.scss */
+#plugin-information pre, #plugin-information code {
+  background-color: #ededff;
+}
+
+/* line 863, ../sass/sebwite-scheme.scss */
+#plugin-information pre {
+  border-color: #ccc;
+}
+
+/* line 866, ../sass/sebwite-scheme.scss */
+#bulk-titles {
+  border-color: #ddd;
+}
+
+/* line 869, ../sass/sebwite-scheme.scss */
+.inline-editor div.title {
+  background-color: #eaf3fa;
+}
+
+/* line 872, ../sass/sebwite-scheme.scss */
+.inline-editor ul.cat-checklist {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+/* line 876, ../sass/sebwite-scheme.scss */
+.inline-editor .quick-edit-save {
+  background-color: #f1f1f1;
+}
+
+/* line 879, ../sass/sebwite-scheme.scss */
+fieldset.inline-edit-col-right .inline-edit-col {
+  border-color: #dfdfdf;
+}
+
+/* line 882, ../sass/sebwite-scheme.scss */
+.attention {
+  color: #96cc19;
+}
+
+/* line 885, ../sass/sebwite-scheme.scss */
+.tablenav .tablenav-pages {
+  color: #555;
+}
+
+/* line 888, ../sass/sebwite-scheme.scss */
+.tablenav .tablenav-pages a {
+  background: #eee;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 892, ../sass/sebwite-scheme.scss */
+.tablenav .tablenav-pages a:hover, .tablenav .tablenav-pages a:focus {
+  color: #fff;
+  background: #96cc19;
+}
+
+/* line 896, ../sass/sebwite-scheme.scss */
+.tablenav .tablenav-pages a.disabled, .tablenav .tablenav-pages a.disabled:hover, .tablenav .tablenav-pages a.disabled:focus {
+  color: #aaa;
+  background: #eee;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 901, ../sass/sebwite-scheme.scss */
+.tablenav .tablenav-pages .current {
+  background: #dfdfdf;
+  border-color: #d3d3d3;
+}
+
+/* line 905, ../sass/sebwite-scheme.scss */
+#availablethemes, #availablethemes td {
+  border-color: #ddd;
+}
+
+/* line 908, ../sass/sebwite-scheme.scss */
+#current-theme img {
+  border-color: #999;
+}
+
+/* line 911, ../sass/sebwite-scheme.scss */
+#TB_window #TB_title a.tb-theme-preview-link, #TB_window #TB_title a.tb-theme-preview-link:visited {
+  color: #999;
+}
+
+/* line 914, ../sass/sebwite-scheme.scss */
+#TB_window #TB_title a.tb-theme-preview-link:hover, #TB_window #TB_title a.tb-theme-preview-link:focus {
+  color: #ccc;
+}
+
+/* line 919, ../sass/sebwite-scheme.scss */
+#minor-publishing {
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 924, ../sass/sebwite-scheme.scss */
+.post-com-count span {
+  background-color: #bbb;
+}
+
+/* line 927, ../sass/sebwite-scheme.scss */
+.sortable-placeholder {
+  border-color: #bbb;
+}
+
+/* line 930, ../sass/sebwite-scheme.scss */
+#post-body ul.category-tabs li.tabs a, #post-body ul.add-menu-item-tabs li.tabs a, body.press-this ul.category-tabs li.tabs a {
+  color: #333;
+}
+
+/* line 933, ../sass/sebwite-scheme.scss */
+.view-switch > a:before {
+  color: #bbb;
+}
+
+/* line 936, ../sass/sebwite-scheme.scss */
+.view-switch a:hover:before {
+  color: #727272;
+}
+
+/* line 939, ../sass/sebwite-scheme.scss */
+.view-switch a.current:before {
+  color: #659003;
+}
+
+/* line 942, ../sass/sebwite-scheme.scss */
+div.widgets-sortables, #widgets-left .inactive, #available-widgets .widget-holder {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* line 946, ../sass/sebwite-scheme.scss */
+#widgets-left #available-widgets {
+  background: transparent;
+}
+
+/* line 949, ../sass/sebwite-scheme.scss */
+#widgets-left .widgets-holder-wrap {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 954, ../sass/sebwite-scheme.scss */
+.sidebar-name {
+  border-bottom-color: #e1e1e1;
+}
+
+/* line 957, ../sass/sebwite-scheme.scss */
+.js #removing-widget {
+  color: #96cc19;
+}
+
+/* line 960, ../sass/sebwite-scheme.scss */
+#removing-widget span {
+  color: #000;
+}
+
+/* line 963, ../sass/sebwite-scheme.scss */
+.in-widget-title, #widgets-right .widget-top a.widget-control-edit, #wp_inactive_widgets .in-widget-title, #available-widgets .widget-description {
+  color: #666;
+}
+
+/* line 966, ../sass/sebwite-scheme.scss */
+#widgets-right .widget-top a.widget-control-edit:hover {
+  color: #fff;
+}
+
+/* line 969, ../sass/sebwite-scheme.scss */
+.deleting .widget-title, .deleting .widget-top a.widget-action:after {
+  color: #aaa;
+}
+
+/* line 972, ../sass/sebwite-scheme.scss */
+.imgedit-menu div {
+  border-color: #d5d5d5;
+  background-color: #f1f1f1;
+}
+
+/* line 976, ../sass/sebwite-scheme.scss */
+.imgedit-menu div:hover {
+  border-color: #c1c1c1;
+  background-color: #eaeaea;
+}
+
+/* line 980, ../sass/sebwite-scheme.scss */
+.imgedit-menu div.disabled {
+  border-color: #ccc;
+  background-color: #ddd;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+/* line 986, ../sass/sebwite-scheme.scss */
+#menu-management {
+  background: #f5f5f5;
+}
+
+/* line 989, ../sass/sebwite-scheme.scss */
+#menu-management #post-body {
+  background: #fff;
+  border-top-color: #fff;
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 994, ../sass/sebwite-scheme.scss */
+#nav-menu-header {
+  border-bottom-color: #dfdfdf;
+}
+
+/* line 997, ../sass/sebwite-scheme.scss */
+#menu-management .nav-tabs-arrow a {
+  color: #c1c1c1;
+}
+
+/* line 1000, ../sass/sebwite-scheme.scss */
+#menu-management .nav-tabs-arrow a:hover {
+  color: #96cc19;
+}
+
+/* line 1003, ../sass/sebwite-scheme.scss */
+#menu-management .nav-tabs-arrow a:active {
+  color: #464646;
+}
+
+/* line 1006, ../sass/sebwite-scheme.scss */
+#menu-management .nav-tab-active {
+  border-color: #dfdfdf;
+}
+
+/* line 1009, ../sass/sebwite-scheme.scss */
+#menu-management .nav-tab {
+  background: #fbfbfb;
+  border-color: #dfdfdf;
+}
+
+/* line 1013, ../sass/sebwite-scheme.scss */
+.js .input-with-default-title {
+  color: #aaa;
+}
+
+/* line 1016, ../sass/sebwite-scheme.scss */
+#cancel-save {
+  color: red;
+}
+
+/* line 1019, ../sass/sebwite-scheme.scss */
+#cancel-save:hover {
+  background-color: red;
+  color: #fff;
+}
+
+/* line 1023, ../sass/sebwite-scheme.scss */
+.list-container, .menu-item-handle {
+  border-color: #dfdfdf;
+}
+
+/* line 1026, ../sass/sebwite-scheme.scss */
+.menu li.deleting .menu-item-handle {
+  background-color: #f66;
+}
+
+/* line 1029, ../sass/sebwite-scheme.scss */
+.item-type {
+  color: #777;
+}
+
+/* line 1032, ../sass/sebwite-scheme.scss */
+.item-controls .menu-item-delete:hover {
+  color: red;
+}
+
+/* line 1035, ../sass/sebwite-scheme.scss */
+.widget-action, .handlediv, .item-edit, .sidebar-name-arrow, .accordion-section-title:after {
+  color: #aaa;
+}
+
+/* line 1038, ../sass/sebwite-scheme.scss */
+.widget-action:hover, .handlediv:hover, .item-edit:hover, .sidebar-name:hover .sidebar-name-arrow, .accordion-section-title:hover:after {
+  color: #777;
+}
+
+/* line 1041, ../sass/sebwite-scheme.scss */
+.link-to-original {
+  color: #777;
+  border-color: #dfdfdf;
+}
+
+/* line 1045, ../sass/sebwite-scheme.scss */
+#cancel-save:hover {
+  color: white !important;
+}
+
+/* line 1048, ../sass/sebwite-scheme.scss */
+#update-menu-item {
+  color: white !important;
+}
+
+/* line 1051, ../sass/sebwite-scheme.scss */
+#update-menu-item:hover, #update-menu-item:active, #update-menu-item:focus {
+  color: #eaf2fa !important;
+  border-color: #13455b !important;
+}
+
+/* line 1055, ../sass/sebwite-scheme.scss */
+.submitbox .submitcancel {
+  color: #659003;
+  border-bottom-color: #659003;
+}
+
+/* line 1059, ../sass/sebwite-scheme.scss */
+.submitbox .submitcancel:hover {
+  background: #659003;
+  color: #fff;
+}
+
+/* line 1063, ../sass/sebwite-scheme.scss */
+.manage-menus {
+  background: #fbfbfb;
+}
+
+/* line 1066, ../sass/sebwite-scheme.scss */
+.menu-settings {
+  border-top-color: #eee;
+}
+
+/* line 1069, ../sass/sebwite-scheme.scss */
+.theme-location-set {
+  color: #999;
+}
+
+/* line 1072, ../sass/sebwite-scheme.scss */
+.nav-menus-php .delete-action a {
+  color: #bc0b0b;
+}
+
+/* line 1075, ../sass/sebwite-scheme.scss */
+.is-submenu {
+  color: #999;
+}
+
+/* line 1078, ../sass/sebwite-scheme.scss */
+.nav-tab {
+  color: #555;
+  border-color: #ccc;
+  background: #e4e4e4;
+}
+
+/* line 1083, ../sass/sebwite-scheme.scss */
+.nav-tab:hover {
+  background-color: #fff;
+  color: #464646;
+}
+
+/* line 1087, ../sass/sebwite-scheme.scss */
+.nav-tab-active {
+  color: #464646;
+}
+
+/* line 1090, ../sass/sebwite-scheme.scss */
+.nav-tab-active, .nav-tab-active:hover {
+  color: #000;
+  background: 0 0;
+  border-color: #ccc;
+  border-bottom-color: #f1f1f1;
+}
+
+/* line 1096, ../sass/sebwite-scheme.scss */
+h2.nav-tab-wrapper, h3.nav-tab-wrapper {
+  border-bottom-color: #ccc;
+}
+
+/* line 1099, ../sass/sebwite-scheme.scss */
+#upload-form label {
+  color: #777;
+}
+
+/* line 1102, ../sass/sebwite-scheme.scss */
+.about-wrap h1 {
+  color: #333;
+}
+
+/* line 1105, ../sass/sebwite-scheme.scss */
+.about-text {
+  color: #777;
+}
+
+/* line 1108, ../sass/sebwite-scheme.scss */
+.wp-badge {
+  background-color: #659003;
+  color: #78c8e6;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 1114, ../sass/sebwite-scheme.scss */
+.about-wrap h2 .nav-tab-active {
+  border-color: #ccc;
+  border-bottom-color: #f1f1f1;
+}
+
+/* line 1118, ../sass/sebwite-scheme.scss */
+.about-wrap h2, .about-wrap h3, .about-wrap h4 {
+  color: #222;
+}
+
+/* line 1121, ../sass/sebwite-scheme.scss */
+.about-wrap .feature-section .col-2:before, .about-wrap .feature-section .col-2:after, .about-wrap .feature-section.two-col p:before {
+  color: #1e8cbe;
+}
+
+/* line 1124, ../sass/sebwite-scheme.scss */
+.about-wrap .point-releases {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 1127, ../sass/sebwite-scheme.scss */
+.about-wrap .point-releases h3 {
+  border-top-color: #dfdfdf;
+}
+
+/* line 1130, ../sass/sebwite-scheme.scss */
+.about-wrap li.wp-person img.gravatar {
+  border-color: #ccc;
+}
+
+/* line 1133, ../sass/sebwite-scheme.scss */
+.about-wrap li.wp-person .title {
+  color: #464646;
+}
+
+/* line 1136, ../sass/sebwite-scheme.scss */
+.freedoms-php .about-wrap ol li {
+  color: #999;
+}
+
+/* line 1139, ../sass/sebwite-scheme.scss */
+.freedoms-php .about-wrap ol p {
+  color: #464646;
+}
+
+/* line 1142, ../sass/sebwite-scheme.scss */
+.pressthis a span:before {
+  color: #777;
+}
+
+/* line 1145, ../sass/sebwite-scheme.scss */
+.imgedit-menu div {
+  color: #777;
+}
+
+/* line 1148, ../sass/sebwite-scheme.scss */
+.imgedit-menu div:hover {
+  color: #333;
+}
+
+/* line 1151, ../sass/sebwite-scheme.scss */
+.media-modal-content {
+  background: #fcfcfc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* line 1155, ../sass/sebwite-scheme.scss */
+.media-menu {
+  background: #f3f3f3;
+  border-right-color: #ccc;
+}
+
+/* line 1159, ../sass/sebwite-scheme.scss */
+.media-menu > a {
+  color: #659003;
+}
+
+/* line 1162, ../sass/sebwite-scheme.scss */
+.media-menu .active, .media-menu .active:hover {
+  color: #222;
+}
+
+/* line 1165, ../sass/sebwite-scheme.scss */
+.media-frame-content {
+  background: #fff;
+  border-top-color: #ddd;
+  border-bottom-color: #ddd;
+}
+
+/* line 1170, ../sass/sebwite-scheme.scss */
+.media-menu .separator {
+  border-top-color: #ddd;
+  border-bottom: 0;
+}
+
+/* line 1174, ../sass/sebwite-scheme.scss */
+.media-sidebar {
+  background: #f3f3f3;
+  border-color: #ddd;
+}
+
+/* line 1178, ../sass/sebwite-scheme.scss */
+.media-router .active, .media-router > a.active:last-child {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+}
+
+/* line 1183, ../sass/sebwite-scheme.scss */
+.details.attachment {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 5px #1e8cbe;
+}
+
+/* line 1186, ../sass/sebwite-scheme.scss */
+.attachment .check {
+  background: #eee;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+/* line 1190, ../sass/sebwite-scheme.scss */
+.attachment.details .check {
+  background-color: #1e8cbe;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #1e8cbe;
+}
+
+/* line 1194, ../sass/sebwite-scheme.scss */
+.clearlooks2 {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* line 1197, ../sass/sebwite-scheme.scss */
+.clearlooks2 .mceMiddle span, .clearlooks2 .mceMiddle .mceLeft, .clearlooks2 .mceMiddle .mceRight, .clearlooks2 .mceBottom, .clearlooks2 .mceBottom .mceLeft, .clearlooks2 .mceBottom .mceCenter, .clearlooks2 .mceBottom .mceRight {
+  background-color: #fcfcfc;
+}
+
+/* line 1200, ../sass/sebwite-scheme.scss */
+.clearlooks2 .mceTop span, .clearlooks2 .mceFocus .mceTop span {
+  color: #222;
+}
+
+/* line 1203, ../sass/sebwite-scheme.scss */
+.clearlooks2 .mceClose:before {
+  color: #999;
+}
+
+/* line 1206, ../sass/sebwite-scheme.scss */
+.clearlooks2 .mceClose:hover:before {
+  color: #96cc19;
+}
+
+/* line 1209, ../sass/sebwite-scheme.scss */
+.sticky-menu #TB_window {
+  background: #f1f1f1;
+}
+
+/* line 1212, ../sass/sebwite-scheme.scss */
+a .mceIcon, .mceAction {
+  color: #777;
+}
+
+/* line 1215, ../sass/sebwite-scheme.scss */
+a .mceIcon:hover {
+  color: #333;
+}
+
+/* line 1218, ../sass/sebwite-scheme.scss */
+.login form .input, .login input[type=text], .login form input[type=checkbox] {
+  background: #fbfbfb;
+}
+
+/* line 1221, ../sass/sebwite-scheme.scss */
+.login form {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+/* line 1226, ../sass/sebwite-scheme.scss */
+body.login {
+  background: #f1f1f1;
+}
+
+/* line 1229, ../sass/sebwite-scheme.scss */
+.login #nav a, .login #backtoblog a {
+  text-decoration: none;
+  color: #999;
+}
+
+/* line 1233, ../sass/sebwite-scheme.scss */
+.login #nav a:hover, .login #backtoblog a:hover {
+  color: #96cc19;
+}
+
+/* line 1236, ../sass/sebwite-scheme.scss */
+.login h1 a:hover {
+  color: #96cc19;
+}

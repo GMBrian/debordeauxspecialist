@@ -1,0 +1,355 @@
+/**
+ * Schrijf hier de styling voor de standaard structuur van Woocommerce
+ * 
+ * @author      Brian de Geus - Sebwite
+ * @package     Sebwite/BaseTheme
+ * @since       0.1
+ * @version     0.3.1
+ */
+
+.woocommerce-message {
+    @include success-notice;
+    
+    a.button {
+        float: right;
+        margin-left: 10px;
+    }
+} 
+
+.woocommerce-info {
+    @include info-notice;
+    
+    a.button {
+        float: right;
+        margin-left: 10px;
+    }
+}
+
+.woocommerce-error {
+    @include error-notice;
+    
+    a.button {
+        float: right;
+        margin-left: 10px;
+    }
+}
+
+.woocommerce-invalid-required-field input[type='text'] {
+	border-color: $field_border_color_invalid;
+}
+
+ul#shipping_method {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.posted_in.category,
+.tagged_as,
+.attribute.pa_druif,
+.attribute.pa_inhoud,
+.attribute.pa_jaar {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 15px;
+
+  a {
+    color: $color_8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    font-family: 'dashicons';
+    font-size: 18px;
+    margin-left: -24px;
+    color: $color_8;
+  }
+}
+
+a.permalink-more {
+  color: #666564 !important;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.product_meta {
+  margin-top: -4px;
+  margin-bottom: -5px;
+}
+
+.posted_in.category:before {
+  content: '\f231';
+}
+.tagged_as:before {
+  content: '\f323';
+}
+.attribute.pa_jaar:before {
+  content: '\f469';
+}
+.attribute.pa_inhoud:before {
+  content: '\f174';
+}
+.attribute.pa_druif:before {
+  content: '\f323';
+}
+
+  /* Structuur van forms
+     ========================================================================== */
+
+.tools-container {
+    display: block;
+    overflow: hidden;     
+}
+
+.chosen-container {    
+    display: block;
+    width: 315px !important;
+    
+    a.chosen-single {
+        @include default-field;
+    
+        height: 38px !important;
+        text-decoration: none !important;
+        
+        span {
+            line-height: 20px;
+        }
+        
+        div {
+            padding-top: 7px;
+            height: 27px;
+        }
+    }
+    
+    &.chosen-with-drop {
+        a.chosen-single {            
+            border-color: darken($field_border_color, 10%);
+            
+            @include border-top-left-radius($field_border_radius);
+            @include border-top-right-radius($field_border_radius);
+            @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+            @include background-image(linear-gradient($field_background_gradient_top_color, $field_background_gradient_bottom_color));
+        }
+        
+        .chosen-drop {
+            
+            z-index: 10;
+            background-color: $field_background_gradient_bottom_color;
+            
+            border-color: darken($field_border_color, 10%);
+            
+            .chosen-search, 
+            .chosen-results {
+                background-color: $field_background_gradient_bottom_color;
+            }
+            
+            .chosen-results {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    }
+}
+
+.col2-set {
+	width: 100%;
+	overflow: hidden;
+	
+    .col-1 {
+        float: left;
+        width: 48%;
+        padding-right: 4%;
+    }
+    
+    .col-2 {
+        float: left;
+        width: 48%;
+    }
+}
+
+.woocommerce form {
+    .form-row-first, 
+    .form-row-last {
+        /*width: 315px;*/
+    }
+    
+    .form-row-wide {
+        
+    }
+    
+    .woocommerce-billing-fields h3 {
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-size: $text_size_h2;
+    	font-style: normal;
+    }
+    
+    h3#order_review_heading {
+    	margin-top: 20px;
+    	padding-top: 20px;
+    	border-top: 1px solid $color_11;
+    	
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-size: $text_size_h2;
+    	font-style: normal;
+    }
+    
+    #billing_first_name_field, 
+    #shipping_first_name_field {
+    	width: 48%;
+    	margin-right: 4%;
+    	float: left;
+    }
+    
+    #billing_last_name_field,
+    #shipping_last_name_field {
+    	width: 48%;
+    	float: left;
+    }
+    
+    #order_comments {
+    	min-height: 114px;
+    }
+        
+    .form-row .input-text {
+        width: 100%;
+    }
+    
+    input[type='submit'] {
+        float: right    ;
+    }
+}
+
+/* Wordt gebruiker in Mijn Account & Winkelwagen */
+.woocommerce {
+	table.shop_table {
+		width: 100%;
+		
+		tr th {
+			font-weight: bold;
+			border-bottom: 1px solid $color_11;
+		}
+		
+		.product-remove, 
+		.product-thumbnail, 
+		.product-name, 
+		.product-price, 
+		.product-quantity, 
+		.product-subtotal, 
+		.order-number, 
+		.order-date, 
+		.order-status, 
+		.order-total, 
+		.order-actions {
+			position: static;
+			padding: 8px;
+		}
+		
+		.product-quantity {
+			text-align: center;
+			width: 118px;
+			min-width: 118px;
+		}
+		
+		.product-subtotal {
+			padding: 5px 0 5px 5px;
+		}
+		
+		.quantity {
+			@include quantity-unit;
+		}
+		
+		.product-thumbnail {	
+			padding: 8px 0;
+			                
+	        a {
+	            @include default-image;
+	            
+	            float: left;
+	            width: 68px;
+	        
+	            img {
+	                height: 99px;
+	            }
+	        }
+		}
+		
+		.product-remove {
+			padding-left: 0;
+		}
+		
+		.product-remove a.remove {
+			text-decoration: none;
+			
+			&:before {
+				font-size: 20px;
+				font-family: 'dashicons';
+				content: '\f182';
+				color: $color_8;
+			}
+			
+			&:hover:before {
+				color: $color_3;
+			}
+		}
+		
+		.actions {
+			padding: 10px 0;
+			text-align: right;
+			border-top: 1px solid $color_11;
+			border-bottom: 1px solid $color_11;
+	
+			.coupon {
+				width: 50%;
+				float: left;
+				display: inline-block;
+				text-align: left;
+				
+				label {
+					display: none;
+				}
+			
+				#coupon_code {
+					float: left;
+				}
+			
+				input[type='submit'] {
+					margin-left: 3px;
+				}
+			}
+			
+			input[type='submit'] {
+				display: inline-block;
+				float: none;
+			}
+			
+			&:first-child {
+				padding-left: 0;
+			}
+			
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+	
+	dl.customer_details {
+		width: 60%;
+		overflow: hidden;
+		
+		dt {
+			font-weight: bold;
+			float: left;
+			width: 50%; /* adjust the width; make sure the total of both is 100% */
+		}
+		dd {
+			float: left;
+			width: 50%; /* adjust the width; make sure the total of both is 100% */
+		}
+	}
+}

@@ -1,0 +1,83 @@
+/* --------------------------------------------------------------------------
+   Account pagina's styling
+   -------------------------------------------------------------------------- */
+		
+body.woocommerce-account {
+	
+	.woocommerce {
+		
+		/* Generiek */
+		h2, 
+		h3 {
+			font-size: $text_size_h2;
+			font-style: normal;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		
+		/* Invoerformulieren */
+		> form {
+			width: 60%;
+			margin: 0 auto;
+		}
+		
+		/* Accountgegevens */
+		.my_account_orders-container {
+			@include default-body;
+			padding: 5px 10px 5px;
+		}
+		
+		table.my_account_orders {
+			margin: 0;
+			
+			th, 
+			td {
+				padding: 3px 0;
+			}
+			
+			tr.order:last-of-type {
+				//border-bottom: 1px solid $color_11;
+			}
+			
+			td.order-actions {
+				width: 80px;
+			}
+				
+			a.view {
+				@include small-button;
+   				padding: 0 18px;
+			}
+		}
+		
+		.address a.edit {
+			@include small-button;
+			
+			float: right;
+		}
+		
+		mark {
+			background-color: transparent;
+			font-weight: bold;
+		}
+		
+		.order_details-container {
+			@include default-body;
+			padding: 5px 10px 5px;
+		}
+		
+		table.order_details {
+			margin: 0;
+			
+			th, 
+			td {
+				padding: 3px 0;
+			}
+		
+			tfoot th, 
+			tfoot td {
+				border: none;
+				border-top: 1px solid $color_11;
+			}
+		}
+	}
+}

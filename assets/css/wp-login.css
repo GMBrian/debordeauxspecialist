@@ -1,0 +1,99 @@
+body.login #login p {
+	font-size: 12px;
+}
+/*Alle tekst staat in labels. Dit beslaat dus alle tekst*/
+#loginform label {
+	color: #4e4e4e;
+	font-size: 12px;
+}
+/*Logo*/
+body.login h1 a {
+	background-image: url('../images/branding/login-logo-login.png');
+	background-size: auto;
+	width: auto;
+	margin: 0 auto 20px;
+}
+/*Hele vak is een form*/
+form#loginform {
+	background-image: url('../images/branding/login-bg-form.png');
+	background-position: 0;
+	background-repeat: no-repeat;
+	font-family: Arial;
+	border: 2px solid #ffffff;
+	padding: 21px 24px 41px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+/*Input :focus*/
+.login form input[type=text]:focus, .login form input[type=password]:focus {
+	outline: none;
+    border:1px solid #e7283a;
+    box-shadow:0px 0px 6px rgba(231, 40, 58, 0.8);
+}
+/*Gewone input*/
+.login form input[type=text], .login form input[type=password] {
+    border:none;
+    background-position:-4px -4px;
+    border-radius:1px;
+    width:264px;
+    height:38px;
+    margin-top:5px;
+    border:1px solid #C7C7C7;
+    background-image:url('../images/branding/login-bg-input.png');
+}
+/*Remember Me tekst style*/
+.login form .forgetmenot label {
+	font-size: 12px;
+	line-height: 45px;
+	position: relative;
+	top: -8px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	vertical-align: text-top;
+	padding: 0;
+	margin: 1px 5px 0 0;
+}
+
+.wp-core-ui .button-primary {
+    background: #be1e2d;
+    border-color: #660000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(230,120,120,.5),0 1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 1px 0 rgba(230,120,120,.5),0 1px 0 rgba(0,0,0,.15);
+}
+
+.wp-core-ui .button-primary:hover {
+    background: #b01322;
+    border-color: #660000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(230,120,120,.6);
+    box-shadow: inset 0 1px 0 rgba(230,120,120,.6);
+}
+
+.wp-core-ui .button-primary:focus {
+    background: #be1e1e;
+    border-color: #500e0e;
+    -webkit-box-shadow: inset 0 1px 0 rgba(230,120,120,.6),1px 1px 2px rgba(0,0,0,.4);
+    box-shadow: inset 0 1px 0 rgba(230,120,120,.6),1px 1px 2px rgba(0,0,0,.4);
+}
+
+.wp-core-ui .button:active {
+    background: #be1e1e;
+    border-color: #840000;
+}
+
+/*:hover styling voor de links onder het form. (terug en wachtwoord vergeten)*/
+body.login #nav a:hover, body.login #backtoblog a:hover{
+    color:#e7283a!important;
+    text-decoration:underline;
+    position:relative;
+    left:-20px;
+}
+
+/*gewone styling voor de links onder het form. (terug en wachtwoord vergeten)*/
+.login #nav a, .login #backtoblog a{
+    color:#000!important;
+    text-decoration:none;
+    position:relative;
+    left:-20px;
+}

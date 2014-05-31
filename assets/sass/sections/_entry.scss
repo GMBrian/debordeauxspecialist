@@ -1,0 +1,162 @@
+/**
+ * Schrijf hier de styling voor de entry (het hoofd contentgebied)
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.3.1
+ */
+
+/* Generiek 
+   ========================================================================== */
+
+hr {
+  height: 1px;
+
+  margin: 20px 40px;
+
+  border: none;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.wrapper-entry {
+  @include entry-body;
+
+  width: $entry_width;
+  float: left;
+
+  background-color: $entry_background_color;
+
+  &.entry-left {
+
+  }
+
+  .entry-title {
+    @include page-title;
+  }
+}
+
+.hentry {
+  position: relative;
+
+  .entry-content {
+    padding-bottom: 20px;
+
+    blockquote {
+      margin: 25px 0;
+      font-style: italic;
+    }
+  }
+
+  .chef {
+    float: right;
+  }
+
+  .download {
+    text-align: left;
+
+    .big-button {
+      color: $button_font_color !important;
+      text-decoration: none !important;
+    }
+  }
+
+  .read-more .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+.tax-bdx_recipe_chef,
+.single-post,
+.category,
+.post-type-archive-post,
+.single-bdx_recipe,
+.post-type-archive-bdx_recipe {
+
+  .entry-content {
+    a img.wp-post-image {
+      @include default-image;
+
+      padding: 0;
+      margin: 0 20px 0 0;
+      float: left;
+      clear: both;
+    }
+
+    img.wp-post-image {
+      @include default-image-no-hover;
+
+      padding: 0;
+      margin: 0 20px 0 0;
+      float: left;
+      clear: both;
+    }
+  }
+}
+
+
+/* CPT / single
+   ========================================================================== */
+
+.search-result {
+  position: relative;
+
+  .meta-data {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $color_8;
+    font-style: italic;
+  }
+
+  .read-more {
+    text-align: right;
+    margin: 0;
+  }
+}
+
+
+.archive {
+  .bdx_recipe,
+  .post {
+    .entry-meta {
+      text-align: right;
+    }
+
+    .read-more {
+      text-align: right;
+    }
+  }
+}
+
+.single {
+  .bdx_recipe,
+  .post {
+    .entry-meta {
+      text-align: right;
+    }
+
+    .read-more {
+      text-align: right;
+    }
+  }
+}
+
+/* Archieven
+   ========================================================================== */
+
+.archive {
+  .post {
+    .entry-meta {
+      text-align: right;
+    }
+
+    .read-more {
+      text-align: right;
+    }
+  }
+}

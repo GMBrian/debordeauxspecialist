@@ -1,0 +1,59 @@
+/**
+ * Schrijf hier de styling voor de sidebar
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+
+/* Generiek 
+   ========================================================================== */
+
+.sidebar {
+	height: auto;
+	width: $sidebar_width;
+	
+	&.sidebar-right {
+		float: right;
+		margin-left: $sidebar_side_margin;
+	}
+	&.sidebar-left {
+		float: left;
+		margin-right: $sidebar_side_margin;
+	}	
+    
+    .partners { 
+        h3 {
+            font-style: normal;
+            text-align: center;
+            font-size: 14px;
+            color: #7e7e81;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        a {
+            display: inline-block;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: none;
+            }
+            
+            &.post-nl {
+                margin-left: 15px;
+            }
+            
+            &.ideal {
+                margin-left: 20px;  
+            }
+            
+            img {
+                margin: 0 auto;
+                float: left;
+            }
+        }
+    }
+}
+

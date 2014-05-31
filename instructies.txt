@@ -1,0 +1,21 @@
+/**
+ * 	INSTRUCTIES
+ *
+ *	Instructies voor het gebruik van het basis thema.
+ *
+ */
+
+ 1. Upload/kopieer de hele wordpress installatie van het basis thema op local.sebwite.nl
+ 
+ 2. Zet een kopie van de database van het basis thema over naar je nieuwe installatie.
+ 	Vergeet niet om local.sebwite.nl/basisthema strings aan te passen in het het .sql bestand voordat je dit doet
+
+ 3. Hernoem het child theme (sebwite.base-theme-child) en alle variabelen in style.css naar teksten voor de klant
+ 
+ 4. Werk alleen in het child theme, als je echt iets moet aanpassen in het parent theme geeft het dan door en maak een 'blocker' taak in Jira.
+ 
+ 5. Loop alle variabelen langs in config.php
+ 
+ 6. Loop alle en wijzig variabelen in sass/_variables.scss
+ 
+ 7. Loop alle en wijzig alle mixins

@@ -1,0 +1,22 @@
+/**
+ * CSS voor de WYSIWYG editor in WordPress. Dit bestand wordt alleen geïnclude in de backend van WordPress.
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+
+/* Imports 
+   ========================================================================== */
+
+@import "compass/css3";
+@import "variables";
+@import "base/mixins";
+
+.wp-editor {
+	@import "base/text";
+	@import "base/controls";
+	
+	@include content-text-styling;
+}

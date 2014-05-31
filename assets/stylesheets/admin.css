@@ -1,0 +1,22 @@
+/**
+ * CSS voor de backend van WordPress. Dit bestand wordt alleen geïnclude in de backend van WordPress.
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+/* Generiek 
+   ========================================================================== */
+/* line 13, ../sass/admin.scss */
+#adminmenu .toplevel_page_widgets div.wp-menu-image:before {
+  content: "\f136";
+}
+
+/* line 17, ../sass/admin.scss */
+#adminmenu .toplevel_page_nav-menus div.wp-menu-image:before {
+  content: "\f214";
+}
+
+/* Backend Color Scheme 
+   ========================================================================== */

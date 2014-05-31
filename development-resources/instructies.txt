@@ -1,0 +1,5 @@
+/**
+ * 	INSTRUCTIES
+ */
+
+Gebruik de resources in deze map voor voorbeeld functies. Hou de originele versie van bestanden in deze map.

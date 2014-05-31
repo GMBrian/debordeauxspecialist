@@ -1,0 +1,813 @@
+/**
+ * CSS voor de WYSIWYG editor in WordPress. Dit bestand wordt alleen geïnclude in de backend van WordPress.
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+/* Imports 
+   ========================================================================== */
+/**
+ * Definieer AL(!) je variabelen hier. Schrijf achter elke variabele commentaar
+ * 
+ * Als je iets niet kan aanpassen via deze variabelen, kijk dan in _mixins.scss
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+/* Versie 
+   ========================================================================== */
+/* Update altijd met een nieuwe release */
+/* Voor IE9 en opera browsers gradient fallback */
+/* Variables 
+   ========================================================================== */
+/* Kleuren - voeg hier alle kleuren toe die gebruikt */
+/* Bordeaux rood */
+/* Wit */
+/* Donkergrijs */
+/* Diep rood */
+/* Donker bordeaux rood */
+/* Licht rood */
+/* Lichtgrijs */
+/* Matig grijs */
+/* Zeer licht grijsrood (roze) voor button top shadow */
+/* Matig grijsrood voor button top */
+/* Border transparent */
+/* Groen */
+/* De standaard achtergrond kleur van container elementen  */
+/* Fonts */
+/* De eerste font-family */
+/* De tweede font-family */
+/* Tekst */
+/* De standaard grootte van content */
+/* De grootte van kleine (maar leesbare) tekst */
+/* De tekstgrootte van header 1 */
+/* De tekstgrootte van header 2 */
+/* De tekstgrootte van header 3 */
+/* De tekstgrootte van header 4 */
+/* De standaard regelhoogte van content */
+/* De standaard kleur voor headings */
+/* De standaard kleur voor tekst */
+/* De tegenovergestelde kleur van de standaard kleur voor tekst */
+/* Een donkere tint van de standaard kleur voor tekst */
+/* Een lichtere tint van de standaard kleur voor tekst */
+/* De standaard kleur voor een anchor in tekst */
+/* De hover kleur voor een anchor in tekst */
+/* De active kleur voor een anchor in tekst */
+/* De error kleur (een variant rood) */
+/* De succes kleur (een variant groen) */
+/* De succes kleur (een variant geel) */
+/* Structure */
+/* De breedte van alle website elementen die niet full-width zijn */
+/* De achtergrondkleur voor de wrapper van de sidebar & content */
+/* De hoogte van de extra ruimte waarna de content start onder de header */
+/* Hoofdheader */
+/* De hoogte van de fixed menu header */
+/* De achtergrondkleur van de fixed menu header */
+/* De schadow onder de fixed menu header */
+/* Main menu */
+/* De hoogte van de dropdown items van submenu */
+/* De kleur van de hover van menu items */
+/* Breadcrumbs */
+/* De breadcrumb tekstgrootte */
+/* De breadcrumb font-family */
+/* De breadcrumb tekstkleur */
+/* Sidebar */
+/* De breedte van de sidebar */
+/* De breedte van de margin naast de sidebar */
+/* De breedte van de sidebar plus de margin */
+/* Widget */
+/* De achtergrondkleur van de widget gebieden */
+/* De achtergrondkleur van de widget gebieden */
+/* De kleur van de widget header tekst */
+/* De font-family van de widget header tekst */
+/* De font-size van de widget header tekst */
+/* De ruimte onder elke widget */
+/* Content */
+/* De breedte van de inhoud als er een sidebar is */
+/* De achtergrondkleur van het content gebied */
+/* Footer */
+/* De hoogte van de footer */
+/* De achtergrondkleur voor de wrapper van de sidebar & content */
+/* De hoogte van de extra ruimte boven de footer */
+/* Background */
+/* De achtergrondkleur van de hele website (wordt niet gezien als er een achtergrond afbeelding is) */
+/* De achtergroundafbeelding op repeat (zet op 'none' voor de achtergrondkleur) */
+/* Button */
+/* De kleur van de bovenkant van de gradient van de button */
+/* De kleur van de onderkant van de gradient van de button */
+/* De kleur van de inset shadow van de button aan de bovekant - zet een tintje licher als de top gradient kleur */
+/* De font-size van de button tekst */
+/* De font-family van de button tekst */
+/* De kleur van de button tekst */
+/* De kleur van de border van de button */
+/* De radius van de border van de button */
+/* De breedte van de border van de button */
+/* Field */
+/* De kleur van de bovenkant van de gradient van het veld */
+/* De kleur van de onderkant van de gradient van het veld */
+/* De kleur van de bovenkant inset schadow van het veld */
+/* De font-size van de veld tekst */
+/* De font-family van de veld tekst */
+/* De regelhoogte van de veld tekst */
+/* De kleur van de veld tekst */
+/* De kleur van de border van het veld */
+/* De radius van de border van het veld */
+/* De breedte van de border van het veld */
+/* Meldingen */
+/* De kleur van de veld tekst */
+/* De kleur van de border van het veld */
+/* De kleur van de border van het veld */
+/* De kleur van de border van het veld */
+/* De kleur van de border van het veld */
+/* De font-size van de veld tekst */
+/* De font-family van de veld tekst */
+/* De regelhoogte van de veld tekst */
+/* De radius van de border van het veld */
+/* De breedte van de border van het veld */
+/**
+ * CSS voor de mixins. Schrijf hier de generieke mixins die je gebruik door je thema, zoals de stijl van een widget/content body
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+/* Mixins gebruik
+   ========================================================================== */
+/* Mixins voor hoofdelementen
+   ========================================================================== */
+/* De mixin voor standaard achtergrond van elementen */
+/* De styling van het hoofd pagina wrapper parent element */
+/* De styling van het entry/content parent element */
+/* De styling van het sidebar parent element */
+/* De styling van het widget parent element */
+/* De styling van het widget header element */
+/* De styling van het widget content element */
+/* Mixins voor content
+   ========================================================================== */
+/* De styling voor afbeeldingen in de entry-wrapper (in content) */
+/* Mixins voor notificaties
+   ========================================================================== */
+/* De opzet van de styling voor notificaties (zowel Woocommerce als bijv. Contact Form 7) */
+/* De kleuren voor een 'success' notificatie */
+/* De kleuren voor een 'error' notificatie */
+/* De kleuren voor een 'info' notificatie */
+/* Mixins voor controls (zoals buttons & velden)
+   ========================================================================== */
+/* De styling van buttons, werkt op input button maar ook anchors */
+/* De styling van buttons, werkt op input button maar ook anchors */
+/* De basis voor checkboxes en radiobuttons, ik heb geen idee wat sommige properties doen maar het meeste is gekopieerd van WordPress */
+/* De styling van checkboxes */
+/* De styling van checkboxes */
+/* Overige mixins
+   ========================================================================== */
+/* Gebruik om tekst te hiden die wel nodig is voor SEO doeleinden */
+/* Gebruik om de outline bij elementen die gefocussed zijn in chrome te verwijderen */
+/* line 17, ../sass/editor.scss */
+.wp-editor {
+  /**
+   * CSS voor de styling van text. Definieer hier de headers, hoofdtexten en andere subtextstyling.
+   *
+   * @author 		Brian de Geus - Sebwite
+   * @package 	Sebwite/BaseTheme
+   * @since		0.1
+   * @version     0.2
+   */
+  /* Generieke teksten
+     -------------------------------------------------------------------------- */
+  /* Dit is de mixin waar je stylen toepast op de tekst voor content, wordt hergebruikt in de backend editor */
+  /* =WordPress Core
+  -------------------------------------------------------------- */
+  /**
+   * CSS voor de styling van controls. Schrijf hier controls zoals buttons & input velden
+   *
+   * @author 		Brian de Geus - Sebwite
+   * @package 	Sebwite/BaseTheme
+   * @since		0.1
+   * @version     0.2
+   */
+}
+/* line 13, ../sass/base/_text.scss */
+.wp-editor h1, .wp-editor h2, .wp-editor h3, .wp-editor h4 {
+  font-family: "Vollkorn", serif;
+  font-weight: normal;
+  color: #333333;
+}
+/* line 19, ../sass/base/_text.scss */
+.wp-editor h1, .wp-editor h2, .wp-editor h3, .wp-editor h4 {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  text-transform: none;
+}
+/* line 25, ../sass/base/_text.scss */
+.wp-editor h1 {
+  font-size: 30px;
+}
+/* line 29, ../sass/base/_text.scss */
+.wp-editor h2 {
+  font-size: 24px;
+}
+/* line 33, ../sass/base/_text.scss */
+.wp-editor h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+/* line 38, ../sass/base/_text.scss */
+.wp-editor h1 {
+  font-size: 30px;
+}
+/* line 39, ../sass/base/_text.scss */
+.wp-editor h2 {
+  font-size: 24px;
+}
+/* line 40, ../sass/base/_text.scss */
+.wp-editor h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+/* line 41, ../sass/base/_text.scss */
+.wp-editor h4 {
+  font-size: 15px;
+}
+/* line 43, ../sass/base/_text.scss */
+.wp-editor div, .wp-editor p, .wp-editor span, .wp-editor ul, .wp-editor table, .wp-editor tr, .wp-editor td, .wp-editor ol, .wp-editor small, .wp-editor label, .wp-editor del {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #333333;
+  line-height: 28px;
+}
+/* line 50, ../sass/base/_text.scss */
+.wp-editor a {
+  text-decoration: underline;
+  color: #7a1318;
+}
+/* line 54, ../sass/base/_text.scss */
+.wp-editor a:hover {
+  text-decoration: none;
+  color: #7a1318;
+}
+/* line 59, ../sass/base/_text.scss */
+.wp-editor a:active {
+  text-decoration: none;
+  color: #0c0202;
+}
+/* line 65, ../sass/base/_text.scss */
+.wp-editor b {
+  font-weight: bold;
+}
+/* line 69, ../sass/base/_text.scss */
+.wp-editor small {
+  display: block;
+  font-size: 11px;
+}
+/* line 74, ../sass/base/_text.scss */
+.wp-editor strong {
+  font-weight: bold;
+}
+/* line 78, ../sass/base/_text.scss */
+.wp-editor abbr[title] {
+  border-bottom: none;
+}
+/* line 85, ../sass/base/_text.scss */
+.wp-editor h1.page-head,
+.wp-editor h1.page-title,
+.wp-editor h2.page-head,
+.wp-editor h2.page-title {
+  line-height: 30px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 15px 0;
+  font-size: 28px;
+  font-family: "Vollkorn", serif;
+  color: #333333;
+  text-align: center;
+}
+/* line 89, ../sass/base/_text.scss */
+.wp-editor .title-header {
+  line-height: 30px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+/* line 94, ../sass/base/_text.scss */
+.wp-editor h1.caps-head,
+.wp-editor h2.caps-head {
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 101, ../sass/base/_text.scss */
+.wp-editor h2.tight-head {
+  line-height: 25px;
+  margin: 30px 0 0 !important;
+}
+/* line 106, ../sass/base/_text.scss */
+.wp-editor small.page-head {
+  margin: 0 0 25px 0;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #8f8f8f;
+}
+/* line 117, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry h1, .wp-editor .wrapper-entry h2, .wp-editor .wrapper-entry h3, .wp-editor .wrapper-entry h4 {
+  margin: 10px 0;
+}
+/* line 121, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p, .wp-editor .wrapper-entry ul, .wp-editor .wrapper-entry table, .wp-editor .wrapper-entry tr, .wp-editor .wrapper-entry td, .wp-editor .wrapper-entry ol {
+  margin: 10px 0;
+}
+/* line 125, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry ol {
+  padding: 0 0 0 40px;
+  list-style: decimal;
+}
+/* line 130, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry ul {
+  padding: 0 0 0 40px;
+  list-style: disc;
+}
+/* line 135, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry del {
+  color: #333333;
+}
+/* line 139, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p a {
+  text-decoration: underline;
+  color: #7a1318;
+}
+/* line 143, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p a:hover {
+  text-decoration: none;
+  color: #7a1318;
+}
+/* line 147, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p a:active {
+  text-decoration: none;
+  color: #0c0202;
+}
+/* line 153, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry img {
+  height: auto;
+  max-width: 100%;
+}
+/* line 164, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p.kleine-tekst, .wp-editor .wrapper-entry span.kleine-tekst, .wp-editor .wrapper-entry small.kleine-tekst, .wp-editor .wrapper-entry ul.kleine-tekst, .wp-editor .wrapper-entry table.kleine-tekst, .wp-editor .wrapper-entry tr.kleine-tekst, .wp-editor .wrapper-entry td.kleine-tekst, .wp-editor .wrapper-entry ol.kleine-tekst {
+  font-size: 12px;
+}
+/* line 167, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p.grote-tekst, .wp-editor .wrapper-entry span.grote-tekst, .wp-editor .wrapper-entry small.grote-tekst, .wp-editor .wrapper-entry ul.grote-tekst, .wp-editor .wrapper-entry table.grote-tekst, .wp-editor .wrapper-entry tr.grote-tekst, .wp-editor .wrapper-entry td.grote-tekst, .wp-editor .wrapper-entry ol.grote-tekst {
+  font-size: 14px;
+}
+/* line 170, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p.extra-grote-tekst, .wp-editor .wrapper-entry span.extra-grote-tekst, .wp-editor .wrapper-entry small.extra-grote-tekst, .wp-editor .wrapper-entry ul.extra-grote-tekst, .wp-editor .wrapper-entry table.extra-grote-tekst, .wp-editor .wrapper-entry tr.extra-grote-tekst, .wp-editor .wrapper-entry td.extra-grote-tekst, .wp-editor .wrapper-entry ol.extra-grote-tekst {
+  font-size: 16px;
+}
+/* line 175, ../sass/base/_text.scss */
+.wp-editor .wrapper-entry p a.button {
+  line-height: normal;
+  color: white;
+  text-decoration: none;
+}
+/* line 189, ../sass/base/_text.scss */
+.wp-editor .alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 194, ../sass/base/_text.scss */
+.wp-editor .aligncenter,
+.wp-editor div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+/* line 199, ../sass/base/_text.scss */
+.wp-editor .alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 204, ../sass/base/_text.scss */
+.wp-editor .alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 209, ../sass/base/_text.scss */
+.wp-editor .aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+/* line 214, ../sass/base/_text.scss */
+.wp-editor a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 219, ../sass/base/_text.scss */
+.wp-editor a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 223, ../sass/base/_text.scss */
+.wp-editor a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 228, ../sass/base/_text.scss */
+.wp-editor a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 234, ../sass/base/_text.scss */
+.wp-editor .wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+/* line 242, ../sass/base/_text.scss */
+.wp-editor .wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 246, ../sass/base/_text.scss */
+.wp-editor .wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+/* line 250, ../sass/base/_text.scss */
+.wp-editor .wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+/* line 254, ../sass/base/_text.scss */
+.wp-editor .wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+/* line 263, ../sass/base/_text.scss */
+.wp-editor .wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* line 12, ../sass/base/_controls.scss */
+.wp-editor input[type='submit'],
+.wp-editor input[type='button'],
+.wp-editor .button {
+  display: inline-block;
+  border: 1px solid #520202;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #520202;
+  background-color: #520202;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  -moz-box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2NDc0YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUyMDIwMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96474b), color-stop(100%, #520202));
+  background-image: -webkit-linear-gradient(#96474b, #520202);
+  background-image: -moz-linear-gradient(#96474b, #520202);
+  background-image: -o-linear-gradient(#96474b, #520202);
+  background-image: linear-gradient(#96474b, #520202);
+}
+/* line 284, ../sass/base/_mixins.scss */
+.wp-editor input[type='submit']:hover, .wp-editor input[type='submit']:focus,
+.wp-editor input[type='button']:hover,
+.wp-editor input[type='button']:focus,
+.wp-editor .button:hover,
+.wp-editor .button:focus {
+  color: white;
+  outline: 0;
+  background-color: #520202;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3NGY1NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZiMDMwMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a74f54), color-stop(100%, #6b0303));
+  background-image: -webkit-linear-gradient(#a74f54, #6b0303);
+  background-image: -moz-linear-gradient(#a74f54, #6b0303);
+  background-image: -o-linear-gradient(#a74f54, #6b0303);
+  background-image: linear-gradient(#a74f54, #6b0303);
+}
+/* line 291, ../sass/base/_mixins.scss */
+.wp-editor input[type='submit']:active,
+.wp-editor input[type='button']:active,
+.wp-editor .button:active {
+  color: white;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUyMDIwMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk2NDc0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #520202), color-stop(100%, #96474b));
+  background-image: -webkit-linear-gradient(#520202, #96474b);
+  background-image: -moz-linear-gradient(#520202, #96474b);
+  background-image: -o-linear-gradient(#520202, #96474b);
+  background-image: linear-gradient(#520202, #96474b);
+}
+/* line 16, ../sass/base/_controls.scss */
+.wp-editor .big-button {
+  display: inline-block;
+  border: 1px solid #520202;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #520202;
+  background-color: #520202;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  -moz-box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  box-shadow: inset 0px 1px 0px 0px #cf7f83;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2NDc0YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUyMDIwMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96474b), color-stop(100%, #520202));
+  background-image: -webkit-linear-gradient(#96474b, #520202);
+  background-image: -moz-linear-gradient(#96474b, #520202);
+  background-image: -o-linear-gradient(#96474b, #520202);
+  background-image: linear-gradient(#96474b, #520202);
+  font-size: 15px;
+  padding: 8px 20px;
+}
+/* line 284, ../sass/base/_mixins.scss */
+.wp-editor .big-button:hover, .wp-editor .big-button:focus {
+  color: white;
+  outline: 0;
+  background-color: #520202;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3NGY1NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzZiMDMwMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a74f54), color-stop(100%, #6b0303));
+  background-image: -webkit-linear-gradient(#a74f54, #6b0303);
+  background-image: -moz-linear-gradient(#a74f54, #6b0303);
+  background-image: -o-linear-gradient(#a74f54, #6b0303);
+  background-image: linear-gradient(#a74f54, #6b0303);
+}
+/* line 291, ../sass/base/_mixins.scss */
+.wp-editor .big-button:active {
+  color: white;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUyMDIwMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk2NDc0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #520202), color-stop(100%, #96474b));
+  background-image: -webkit-linear-gradient(#520202, #96474b);
+  background-image: -moz-linear-gradient(#520202, #96474b);
+  background-image: -o-linear-gradient(#520202, #96474b);
+  background-image: linear-gradient(#520202, #96474b);
+}
+/* line 22, ../sass/base/_controls.scss */
+.wp-editor input[type='text'],
+.wp-editor input[type='password'],
+.wp-editor input[type='email'] {
+  display: block;
+  padding: 8px 8px;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(#ffffff, #e5e5e5);
+  background-image: -moz-linear-gradient(#ffffff, #e5e5e5);
+  background-image: -o-linear-gradient(#ffffff, #e5e5e5);
+  background-image: linear-gradient(#ffffff, #e5e5e5);
+}
+/* line 331, ../sass/base/_mixins.scss */
+.wp-editor input[type='text']:focus,
+.wp-editor input[type='password']:focus,
+.wp-editor input[type='email']:focus {
+  outline: 0;
+  border-color: #b2b2b2;
+}
+/* line 26, ../sass/base/_controls.scss */
+.wp-editor textarea {
+  display: block;
+  padding: 8px 8px;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(#ffffff, #e5e5e5);
+  background-image: -moz-linear-gradient(#ffffff, #e5e5e5);
+  background-image: -o-linear-gradient(#ffffff, #e5e5e5);
+  background-image: linear-gradient(#ffffff, #e5e5e5);
+}
+/* line 331, ../sass/base/_mixins.scss */
+.wp-editor textarea:focus {
+  outline: 0;
+  border-color: #b2b2b2;
+}
+/* line 30, ../sass/base/_controls.scss */
+.wp-editor input[type='checkbox'] {
+  clear: none;
+  outline: 0;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  line-height: 0;
+  margin: -4px 4px 0 0;
+  padding: 0 !important;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  background: #fbfbfb;
+  text-align: center;
+  vertical-align: middle;
+  color: #555;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 371, ../sass/base/_mixins.scss */
+.wp-editor input[type='checkbox']:checked:before {
+  font: 400 21px/1 dashicons;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  color: #7a1318;
+  margin: -3px 0 0 -4px;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 391, ../sass/base/_mixins.scss */
+.wp-editor input[type='checkbox']:checked:before {
+  content: '\f147';
+}
+/* line 34, ../sass/base/_controls.scss */
+.wp-editor input[type='radio'] {
+  clear: none;
+  outline: 0;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  line-height: 0;
+  margin: -4px 4px 0 0;
+  padding: 0 !important;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  background: #fbfbfb;
+  text-align: center;
+  vertical-align: middle;
+  color: #555;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 7px;
+  margin-left: 4px;
+  line-height: 10px;
+}
+/* line 371, ../sass/base/_mixins.scss */
+.wp-editor input[type='radio']:checked:before {
+  font: 400 21px/1 dashicons;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  color: #7a1318;
+  margin: -3px 0 0 -4px;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 405, ../sass/base/_mixins.scss */
+.wp-editor input[type='radio']:checked:before {
+  content: '\2022';
+  width: 6px;
+  height: 6px;
+  margin: 4px;
+  border-radius: 50px;
+  line-height: 16px;
+  text-indent: -9999px;
+  font-size: 24px;
+  background-color: #7a1318;
+}
+/* line 38, ../sass/base/_controls.scss */
+.wp-editor select {
+  height: 30px;
+  line-height: 30px;
+}
+/* line 117, ../sass/base/_text.scss */
+.wp-editor h1, .wp-editor h2, .wp-editor h3, .wp-editor h4 {
+  margin: 10px 0;
+}
+/* line 121, ../sass/base/_text.scss */
+.wp-editor p, .wp-editor ul, .wp-editor table, .wp-editor tr, .wp-editor td, .wp-editor ol {
+  margin: 10px 0;
+}
+/* line 125, ../sass/base/_text.scss */
+.wp-editor ol {
+  padding: 0 0 0 40px;
+  list-style: decimal;
+}
+/* line 130, ../sass/base/_text.scss */
+.wp-editor ul {
+  padding: 0 0 0 40px;
+  list-style: disc;
+}
+/* line 135, ../sass/base/_text.scss */
+.wp-editor del {
+  color: #333333;
+}
+/* line 139, ../sass/base/_text.scss */
+.wp-editor p a {
+  text-decoration: underline;
+  color: #7a1318;
+}
+/* line 143, ../sass/base/_text.scss */
+.wp-editor p a:hover {
+  text-decoration: none;
+  color: #7a1318;
+}
+/* line 147, ../sass/base/_text.scss */
+.wp-editor p a:active {
+  text-decoration: none;
+  color: #0c0202;
+}
+/* line 153, ../sass/base/_text.scss */
+.wp-editor img {
+  height: auto;
+  max-width: 100%;
+}
+/* line 164, ../sass/base/_text.scss */
+.wp-editor p.kleine-tekst, .wp-editor span.kleine-tekst, .wp-editor small.kleine-tekst, .wp-editor ul.kleine-tekst, .wp-editor table.kleine-tekst, .wp-editor tr.kleine-tekst, .wp-editor td.kleine-tekst, .wp-editor ol.kleine-tekst {
+  font-size: 12px;
+}
+/* line 167, ../sass/base/_text.scss */
+.wp-editor p.grote-tekst, .wp-editor span.grote-tekst, .wp-editor small.grote-tekst, .wp-editor ul.grote-tekst, .wp-editor table.grote-tekst, .wp-editor tr.grote-tekst, .wp-editor td.grote-tekst, .wp-editor ol.grote-tekst {
+  font-size: 14px;
+}
+/* line 170, ../sass/base/_text.scss */
+.wp-editor p.extra-grote-tekst, .wp-editor span.extra-grote-tekst, .wp-editor small.extra-grote-tekst, .wp-editor ul.extra-grote-tekst, .wp-editor table.extra-grote-tekst, .wp-editor tr.extra-grote-tekst, .wp-editor td.extra-grote-tekst, .wp-editor ol.extra-grote-tekst {
+  font-size: 16px;
+}
+/* line 175, ../sass/base/_text.scss */
+.wp-editor p a.button {
+  line-height: normal;
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,268 @@
+/**
+ * CSS voor de styling van text. Definieer hier de headers, hoofdtexten en andere subtextstyling.
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.2
+ */
+
+/* Generieke teksten
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4 {
+	font-family: $font_2;
+   	font-weight: normal;
+   	color: $text_color_heading;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Vollkorn', serif;
+    font-weight: normal;
+    text-transform: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+h1 { font-size: $text_size_h1; }
+h2 { font-size: $text_size_h2; }
+h3 { font-size: $text_size_h3; font-style: italic; }
+h4 { font-size: $text_size_h4; }
+
+div, p, span, ul, table, tr, td, ol, small, label, del {
+	font-family: $font_1;
+    font-size: $text_size_default;
+    color: $text_color_default;
+    line-height: $line_height_default;
+}
+
+a {
+	text-decoration: underline;
+	color: $text_color_anchor;
+	
+	&:hover {
+		text-decoration: none;
+		color: $text_color_anchor_hover;
+	}
+	
+	&:active {
+		text-decoration: none;
+		color: $text_color_anchor_active;
+	}
+}
+
+b {
+  font-weight: bold;
+}
+
+small {
+    display: block;
+	font-size: $text_size_small;
+}
+
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+    border-bottom: none;
+}
+
+h1.page-head,
+h1.page-title,
+h2.page-head,
+h2.page-title {
+   @include page-title;
+}
+
+.title-header {
+    @include title-header;
+}
+
+h1.caps-head, 
+h2.caps-head {
+    font-style: normal;
+    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2.tight-head {
+    line-height: 25px;
+    margin: 30px 0 0 !important;
+}
+
+small.page-head {
+    margin: 0 0 25px 0;
+    font-size: 13px;
+    font-family: $font_1;
+    text-align: center;
+    color: $color_8;
+}
+
+/* Dit is de mixin waar je stylen toepast op de tekst voor content, wordt hergebruikt in de backend editor */
+@mixin content-text-styling {
+	
+	h1, h2, h3, h4 {
+		margin: 10px 0;
+	}
+
+	p, ul, table, tr, td, ol {
+		margin: 10px 0;
+	}
+	
+	ol {
+		padding: 0 0 0 40px;
+		list-style: decimal;
+	}
+	
+	ul {
+		padding: 0 0 0 40px;
+		list-style: disc;
+	}
+	
+	del {
+		color: $text_color_default;
+	}
+
+	p a {
+		text-decoration: underline;
+		color: $text_color_anchor;
+		
+		&:hover {
+			text-decoration: none;
+			color: $text_color_anchor_hover;
+		}
+		&:active {
+			text-decoration: none;
+			color: $text_color_anchor_active;
+		}
+	}
+	
+	img {
+		height: auto;
+		max-width: 100%;
+		
+		&:not(.no-border) { 
+			@include image-border; 
+		}
+	}
+	
+	p, span, small, ul, table, tr, td, ol {
+	
+		&.kleine-tekst { 
+			font-size: $text_size_default  - 1px;
+		}
+		&.grote-tekst {
+			font-size: $text_size_default  + 1px;
+		}
+		&.extra-grote-tekst {
+			font-size: $text_size_default  + 3px;
+		}
+	}
+	
+	p a.button {
+		line-height: normal;
+		color: $button_font_color;
+		text-decoration: none;
+	}
+}
+
+.wrapper-entry {
+	@include content-text-styling;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}

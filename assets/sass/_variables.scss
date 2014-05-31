@@ -1,0 +1,163 @@
+/**
+ * Definieer AL(!) je variabelen hier. Schrijf achter elke variabele commentaar
+ * 
+ * Als je iets niet kan aanpassen via deze variabelen, kijk dan in _mixins.scss
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+
+/* Versie 
+   ========================================================================== */
+
+$version: "Version 0.3.1 / BG / 29-01-2013";							/* Update altijd met een nieuwe release */
+
+$experimental-support-for-svg: true;									/* Voor IE9 en opera browsers gradient fallback */
+
+/* Variables 
+   ========================================================================== */
+  
+/* Kleuren - voeg hier alle kleuren toe die gebruikt */
+$color_1: #7a1318;		/* Bordeaux rood */
+$color_2: #fff;	   		/* Wit */
+$color_3: #333;         /* Donkergrijs */
+$color_4: #ac0d0d;      /* Diep rood */
+$color_5: #520202;      /* Donker bordeaux rood */
+$color_6: #c42020;      /* Licht rood */
+$color_7: #e5e5e5;      /* Lichtgrijs */
+$color_8: #8f8f8f;      /* Matig grijs */
+$color_9: #cf7f83;      /* Zeer licht grijsrood (roze) voor button top shadow */
+$color_10: #96474b;     /* Matig grijsrood voor button top */
+$color_11: #c2c2c2; 	/* Border transparent */
+$color_12: #33653a;		/* Groen */
+
+$default_body_background_color: $color_2;								/* De standaard achtergrond kleur van container elementen  */
+
+/* Fonts */
+$font_1: 'Roboto', sans-serif;											/* De eerste font-family */
+$font_2: 'Vollkorn', serif;     										/* De tweede font-family */
+
+/* Tekst */
+$text_size_default: 13px;												/* De standaard grootte van content */
+$text_size_small: 11px;													/* De grootte van kleine (maar leesbare) tekst */
+
+$text_size_h1: 30px;													/* De tekstgrootte van header 1 */
+$text_size_h2: 24px;													/* De tekstgrootte van header 2 */
+$text_size_h3: 18px;													/* De tekstgrootte van header 3 */
+$text_size_h4: 15px;													/* De tekstgrootte van header 4 */
+
+$line_height_default: 28px;												/* De standaard regelhoogte van content */
+
+$text_color_heading: $color_3;											/* De standaard kleur voor headings */
+$text_color_default: $color_3;											/* De standaard kleur voor tekst */
+$text_color_contrast: $color_2;											/* De tegenovergestelde kleur van de standaard kleur voor tekst */
+$text_color_dark: darken($color_3, 25%);								/* Een donkere tint van de standaard kleur voor tekst */
+$text_color_light: lighten($color_3, 25%);								/* Een lichtere tint van de standaard kleur voor tekst */
+
+$text_color_anchor: $color_1;											/* De standaard kleur voor een anchor in tekst */
+$text_color_anchor_hover: $color_1;										/* De hover kleur voor een anchor in tekst */
+$text_color_anchor_active: darken($color_1, 25%);						/* De active kleur voor een anchor in tekst */
+
+$color_error: #ca3838;													/* De error kleur (een variant rood) */
+$color_success: #33653a;												/* De succes kleur (een variant groen) */
+$color_info: #e9d91c;													/* De succes kleur (een variant geel) */
+
+/* Structure */
+$wrapper_width: 1000px;													/* De breedte van alle website elementen die niet full-width zijn */
+$wrapper_background_color: transparent;										/* De achtergrondkleur voor de wrapper van de sidebar & content */
+$wrapper_additional_spacing: 20px;										    /* De hoogte van de extra ruimte waarna de content start onder de header */
+
+/* Hoofdheader */
+$header_height: 60px;													/* De hoogte van de fixed menu header */
+$header_background_color: #fff;					        				/* De achtergrondkleur van de fixed menu header */
+$header_shadow_color: rgba(50, 50, 50, 0.75);							/* De schadow onder de fixed menu header */
+
+/* Main menu */
+$nav_sub_item_height: 40px;												/* De hoogte van de dropdown items van submenu */
+$nav_main_background_color_hover: $color_1;								/* De kleur van de hover van menu items */
+
+/* Breadcrumbs */
+$breadcrumb_font_size: $text_size_default;								/* De breadcrumb tekstgrootte */
+$breadcrumb_font: $font_1;												/* De breadcrumb font-family */
+$breadcrumb_font_color: $color_3;										/* De breadcrumb tekstkleur */
+
+/* Sidebar */
+$sidebar_width: 270px;													/* De breedte van de sidebar */
+$sidebar_side_margin: 20px;												/* De breedte van de margin naast de sidebar */
+$sidebar_full_width: $sidebar_width + $sidebar_side_margin;				/* De breedte van de sidebar plus de margin */
+
+/* Widget */
+$widget_background_color: transparent;		                    		/* De achtergrondkleur van de widget gebieden */
+$widget_header_background_color: transparent;							/* De achtergrondkleur van de widget gebieden */
+$widget_header_text_color: $color_3;				/* De kleur van de widget header tekst */
+$widget_header_font: $font_2;											/* De font-family van de widget header tekst */
+$widget_header_font_size: 24px;											/* De font-size van de widget header tekst */
+$widget_bottom_margin: 20px;											/* De ruimte onder elke widget */
+
+/* Content */
+$entry_width: 710px;													/* De breedte van de inhoud als er een sidebar is */
+$entry_background_color: transparent;				                     /* De achtergrondkleur van het content gebied */
+
+/* Footer */
+$footer_height: 40px;													/* De hoogte van de footer */
+$footer_background_color: $default_body_background_color;				/* De achtergrondkleur voor de wrapper van de sidebar & content */
+$footer_additional_spacing: 20px;										/* De hoogte van de extra ruimte boven de footer */
+$footer_font_size: 12px;
+$footer_font: $font_1;
+$footer_font_color: $color_3;
+
+/* Background */
+$backdrop_color: $color_7;												/* De achtergrondkleur van de hele website (wordt niet gezien als er een achtergrond afbeelding is) */
+$backdrop_repeat_image: url(../images/bg-tile.png);		               	/* De achtergroundafbeelding op repeat (zet op 'none' voor de achtergrondkleur) */
+
+/* Button */
+$button_background_gradient_top_color: $color_10;						/* De kleur van de bovenkant van de gradient van de button */
+$button_background_gradient_bottom_color: $color_5;						/* De kleur van de onderkant van de gradient van de button */
+$button_background_shadow_top_color: $color_9;							/* De kleur van de inset shadow van de button aan de bovekant - zet een tintje licher als de top gradient kleur */
+$button_font_size: $text_size_default;									/* De font-size van de button tekst */
+$button_font: $font_1;													/* De font-family van de button tekst */
+$button_font_color: $color_2;											/* De kleur van de button tekst */
+$button_line_height: 26px;
+$button_border_color: $color_5;											/* De kleur van de border van de button */
+$button_border_radius: 4px;												/* De radius van de border van de button */
+$button_border_width: 1px;												/* De breedte van de border van de button */
+
+/* Field */
+$field_background_gradient_top_color: $color_2;												/* De kleur van de bovenkant van de gradient van het veld */
+$field_background_gradient_bottom_color: $color_7;											/* De kleur van de onderkant van de gradient van het veld */
+$field_background_shadow_top_color: darken($field_background_gradient_bottom_color, 5%);	/* De kleur van de bovenkant inset schadow van het veld */	
+$field_font_size: $text_size_default;														/* De font-size van de veld tekst */
+$field_font: $font_1;																		/* De font-family van de veld tekst */
+$field_line_height: 20px;																	/* De regelhoogte van de veld tekst */
+$field_font_color: $color_3;																/* De kleur van de veld tekst */
+$field_border_color: darken($field_background_gradient_bottom_color, 10%);					/* De kleur van de border van het veld */
+$field_border_radius: 3px;																	/* De radius van de border van het veld */
+$field_border_width: 1px;																	/* De breedte van de border van het veld */
+$field_border_color_invalid: $color_error;
+
+/* Meldingen */
+$notice_background_color: $color_7;				
+$notice_background_color_success: $color_2;
+$notice_background_color_error: $color_2;
+$notice_background_color_info: $color_2;
+
+$notice_font_color: darken($notice_background_color, 25%);				/* De kleur van de veld tekst */
+$notice_font_color_success: $color_3;
+$notice_font_color_error: $color_3;
+$notice_font_color_info: $color_3;
+
+$notice_border_color: darken($notice_background_color, 25%);			/* De kleur van de border van het veld */
+$notice_border_color_success: $color_success;							/* De kleur van de border van het veld */
+$notice_border_color_error: $color_error;								/* De kleur van de border van het veld */
+$notice_border_color_info: $color_info;									/* De kleur van de border van het veld */
+
+$notice_font_size: $text_size_default;									/* De font-size van de veld tekst */
+$notice_font: $font_1;													/* De font-family van de veld tekst */
+$notice_line_height: 20px;												/* De regelhoogte van de veld tekst */
+$notice_border_radius: 0;												/* De radius van de border van het veld */
+$notice_border_width: 5px;												/* De breedte van de border van het veld */
+
+
+

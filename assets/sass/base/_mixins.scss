@@ -1,0 +1,470 @@
+/**
+ * CSS voor de mixins. Schrijf hier de generieke mixins die je gebruik door je thema, zoals de stijl van een widget/content body
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+
+/* Mixins gebruik
+   ========================================================================== */
+
+@mixin default-body-shadow {
+    @include box-shadow(0px 0px 5px rgba(0, 0, 0, .5));
+}
+
+@mixin title-header {
+    line-height: 30px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+    
+@mixin page-title {
+    @include title-header;
+    
+    margin: 15px 0;
+    
+    font-size: 28px;
+    font-family: $font_2;
+    color: $color_3;
+    text-align: center;
+}
+
+@mixin link-list {
+    margin: 0 0 0 20px !important;
+    padding: 0 !important;
+    
+    list-style: none !important;
+    
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    
+    a {
+        @extend a;
+    }
+}
+    
+@mixin widget-title {
+}
+
+/* Mixins voor hoofdelementen
+   ========================================================================== */
+
+@mixin wrapper-content {
+	margin: 0 auto;
+	width: $wrapper_width;
+}
+
+/* De mixin voor standaard achtergrond van elementen */
+@mixin default-body {
+    @include default-body-shadow;
+    
+	background-color: #fff;
+	padding: 5px 20px;
+	
+	@include box-sizing(border-box);
+}
+
+/* De styling van het hoofd pagina wrapper parent element */
+@mixin wrapper-body {
+	
+}
+
+/* De styling van het entry/content parent element */
+@mixin entry-body {
+    
+}
+
+
+/* De styling van het sidebar parent element */
+@mixin sidebar-body {
+	
+}
+
+/* De styling van het widget parent element */
+@mixin widget-body {
+	@include default-body;
+	
+	padding: 0px;
+	margin-bottom: $widget_bottom_margin;
+}
+
+/* De styling van het widget header element */
+@mixin widget-header {
+	font-family: $widget_header_font;
+	color: $widget_header_text_color;
+	background-color: $widget_header_background_color;
+	
+    margin: 8px 4px 4px 4px;
+    
+    font-size: 18px !important;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 19px;
+}
+
+/* De styling van het widget content element */
+@mixin widget-content-body {
+	padding: 0 10px 10px 10px;
+}
+
+/* Mixins voor content
+   ========================================================================== */
+
+/* De styling voor afbeeldingen in de entry-wrapper (in content) */
+@mixin image-border {
+	
+}
+
+@mixin product-title {
+    line-height: 27px;
+    text-transform: none;
+    
+    font-family: $font_2;
+    font-size: $text_size_h2;
+    font-weight: normal;
+    font-style: normal;  
+    color: $color_3;
+    text-decoration: none;
+    
+    margin: 10px 0;
+    padding-left: 10px;
+    border-bottom: 1px solid $color_3;
+    
+    a {
+        color: $color_3;
+        font-family: $font_2;
+        font-size: $text_size_h2;
+        font-weight: normal;
+        font-style: normal; 
+        text-decoration: none;
+        
+        &:hover {
+            color: $color_3;
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin default-image {
+  display: block;
+
+  height: auto;
+  width: auto;
+
+  margin: auto;
+  padding: 3px;
+  border: 1px solid #7e7e81;
+
+  background-color: #fff;
+
+  @include box-shadow(0px 0px 5px rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 0px 0px 3px inset);
+  @include transition(all 0.5s);
+
+  &:hover {
+    border: 1px solid #5b5b5b;
+
+    @include box-shadow(0px 0px 10px rgba(0, 0, 0, .9), rgba(0, 0, 0, .5) 0px 0px 3px inset);
+  }
+
+  img {
+    height: auto;
+    width: auto;
+
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@mixin default-image-no-hover {
+  display: block;
+
+  height: auto;
+  width: auto;
+
+  margin: auto;
+  padding: 3px;
+  border: 1px solid #7e7e81;
+
+  background-color: #fff;
+
+  @include box-shadow(0px 0px 5px rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) 0px 0px 3px inset);
+
+  img {
+    height: auto;
+    width: auto;
+
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Mixins voor notificaties
+   ========================================================================== */
+
+/* De opzet van de styling voor notificaties (zowel Woocommerce als bijv. Contact Form 7) */
+@mixin default-notice {
+    @include default-body-shadow;
+    
+	border-left: $notice_border_width solid $notice_border_color;
+	padding: 10px 10px 10px 18px !important;
+	margin: 20px 0 !important;
+	
+	list-style: none !important;
+	
+	color: $notice_font_color;
+	font-family: $notice_font;
+	font-size: $notice_font_size;
+	font-weight: normal;
+	text-decoration: none;
+	
+	background-color: $notice_background_color;
+	
+	@include border-radius($notice_border_radius);
+}
+
+/* De kleuren voor een 'success' notificatie */
+@mixin success-notice {
+	@include default-notice;
+	
+	background-color: $notice_background_color_success !important;;
+	border-left-color: $notice_border_color_success;
+	color: $notice_font_color_success;
+}
+
+/* De kleuren voor een 'error' notificatie */
+@mixin error-notice {
+	@include default-notice;
+	
+	background-color: $notice_background_color_error !important;
+    border-left-color: $notice_border_color_error;
+	color: $notice_font_color_error;
+}
+
+/* De kleuren voor een 'info' notificatie */
+@mixin info-notice {
+	@include default-notice;
+	
+	background-color: $notice_background_color_info !important;
+    border-left-color: $notice_border_color_info;
+	color: $notice_font_color_info;
+}
+
+
+/* Mixins voor controls (zoals buttons & velden)
+   ========================================================================== */
+  
+/* De styling van buttons, werkt op input button maar ook anchors */
+@mixin default-button {
+	display: inline-block;
+	border: $button_border_width solid $button_border_color;
+	padding: 5px 15px;
+	
+	color: $button_font_color;
+	font-family: $button_font;
+	font-size: $button_font_size;
+	font-weight: normal;
+	line-height: $button_line_height;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px $button_background_gradient_bottom_color;
+	
+	background-color: $button_background_gradient_bottom_color;
+	
+	@include border-radius($button_border_radius);
+	@include box-shadow(inset 0px 1px 0px 0px $button_background_shadow_top_color);
+	
+  	@include background-image(linear-gradient($button_background_gradient_top_color, $button_background_gradient_bottom_color));
+  	
+	&:hover, 
+	&:focus {
+        color: $button_font_color;
+		@include hide-outline;
+		background-color: $button_background_gradient_bottom_color;
+		@include background-image(linear-gradient(lighten($button_background_gradient_top_color, 5%), lighten($button_background_gradient_bottom_color, 5%)));
+	}
+	
+	&:active {
+	    color: $button_font_color;
+  		@include background-image(linear-gradient($button_background_gradient_bottom_color, $button_background_gradient_top_color));
+	}
+}
+
+@mixin big-button {
+    @include default-button;
+    
+    font-size: 15px;
+    padding: 8px 20px;
+}
+
+@mixin small-button {
+    @include default-button;
+    
+    padding: 0 10px;
+}
+
+
+/* De styling van buttons, werkt op input button maar ook anchors */
+@mixin default-field {
+	display: block;
+	
+	padding: 8px 8px;
+	
+	color: $field_font_color;
+	font-family: $field_font;
+	font-size: $field_font_size;
+	line-height: $field_line_height;
+	vertical-align: middle;
+	
+	background-color: $field_background_gradient_top_color;
+	
+	border: $field_border_width solid $field_border_color;
+	
+	@include border-radius($field_border_radius);
+	@include box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.2));
+  	@include background-image(linear-gradient($field_background_gradient_top_color, $field_background_gradient_bottom_color));
+	
+	&:focus {
+		@include hide-outline;
+	
+		border-color: darken($field_border_color, 10%);
+	}
+}
+
+
+/* De basis voor checkboxes en radiobuttons, ik heb geen idee wat sommige properties doen maar het meeste is gekopieerd van WordPress */
+@mixin base-optionbox {
+    clear: none;
+    outline: 0;
+    
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    line-height: 0;
+    
+    margin: -4px 4px 0 0;
+    padding: 0!important;
+    
+    cursor: pointer;
+    
+    border: 1px solid #bbb;
+    background: #fbfbfb;
+    
+    text-align: center;
+    vertical-align: middle;
+    
+    color: #555;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+
+    @include appearance(none);
+    @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+    @include box-sizing(border-box);
+        
+    &:checked:before {
+        font: 400 21px/1 dashicons;
+        
+        float: left;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        color: $color_1;
+        margin: -3px 0 0 -4px;
+        speak: none;
+        
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* De styling van checkboxes */
+@mixin default-checkbox {
+    @include base-optionbox;
+    
+    &:checked:before {
+        content: '\f147';
+    }
+}
+
+/* De styling van checkboxes */
+@mixin default-radiobutton {
+    @include base-optionbox;
+    
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-left: 4px;
+    line-height: 10px;
+    
+    &:checked:before {
+        content: '\2022';
+        
+        width: 6px;
+        height: 6px;
+        margin: 4px;
+        
+        border-radius: 50px;
+        
+        line-height: 16px;
+        text-indent: -9999px;
+        font-size: 24px;
+        
+        background-color: $color_1;
+    }
+}
+
+
+@mixin quantity-unit {
+	input.input-text.qty {
+		width: 50px;
+        margin: 0;
+        line-height: 27px;
+        text-align: center;
+        
+        &::-webkit-inner-spin-button, 
+        &::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    }
+    
+    input {
+        padding: 0;
+    }
+    
+    input.minus {
+        height: 34px;
+        width: 23px;
+        
+        margin: -2px 3px 2px 0px;
+    }
+    
+    input.plus {
+        height: 34px;
+        width: 23px;
+        
+        margin: -2px 0px 2px 3px;
+    }
+}
+
+
+/* Overige mixins
+   ========================================================================== */
+
+/* Gebruik om tekst te hiden die wel nodig is voor SEO doeleinden */
+@mixin hide-text {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+/* Gebruik om de outline bij elementen die gefocussed zijn in chrome te verwijderen */
+@mixin hide-outline {
+    outline: 0;
+}

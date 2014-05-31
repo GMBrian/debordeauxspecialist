@@ -1,0 +1,222 @@
+/**
+ * Schrijf hier de styling voor de hoofdstructuur. Denk aan wrappers en het html of body element
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.3.1
+ */
+
+/* Handmatige resets 
+   ========================================================================== */
+
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+/* Generiek 
+   ========================================================================== */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	
+	background-color: $backdrop_color;
+	background: $backdrop_repeat_image repeat;
+}
+
+.wrapper-content {
+	@include wrapper-content;
+}
+
+.wrapper-main {
+	@include wrapper-body;
+	
+	padding-top: $wrapper_additional_spacing;
+	margin-bottom: $footer_additional_spacing;;
+	
+	background-color: $wrapper_background_color;
+    background: $backdrop_repeat_image repeat;
+	
+    position: relative;
+}
+
+.wrapper-inner-main {
+    @include wrapper-content;
+}
+
+p#breadcrumbs {
+  font-family: $breadcrumb_font;
+  font-size: $breadcrumb_font_size;
+  color: $breadcrumb_font_color;
+
+  margin: 0 0 10px;
+
+  > span > span {
+    margin: 0 5px;
+
+    &:first-of-type {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.col {
+    float: left;
+}
+
+
+/* Hero Unit 
+   ========================================================================== */
+
+.hero-filler {
+    height: 100px;
+    margin-top: 60px;
+    overflow: hidden;
+    
+    background-position: bottom center;
+    
+    @include box-shadow(inset 0px -20px 20px -20px black);
+} 
+
+.hero-unit {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    
+    border-bottom: 1px solid;
+    margin-top: 60px;
+    border: none;
+    
+    background-color: none;
+    
+    &:before {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        content: '';
+        width: 120%;
+        height: 100%;
+        
+        margin: 0 -20px;
+        
+        @include box-shadow(inset 0px -20px 20px -20px black);
+    }
+}
+
+ul.hero-slider-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-slider-background {
+}
+
+.hero-slider-backgroundimages img {
+    display: block;
+    position: absolute;
+    height: 270px;
+    width: 100%;
+}
+
+.hero-slider {
+    height: 270px;
+    width: 960px;
+    margin: 0 auto;
+    
+    display: block;
+}
+
+.hero-slider img {
+    position: absolute;
+}
+
+.hero-slider-text {
+    height: 160px;
+    width: 370px;
+    
+    margin: 90px 20px 20px 0;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    color: #000;
+    
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .8);
+}
+
+.hero-slider-text h2 {
+    margin: 10px 20px 10px 20px;
+    
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.hero-slider-text p {
+    margin: 0 20px 20px 20px;
+    
+    line-height: 24px;
+    font-size: 14px;
+}
+
+ul.hero-slider-blocks {
+    height: 14px;
+    width: auto;
+    
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    
+    list-style: none;
+}
+
+ul.hero-slider-blocks li {
+    float: left;
+}
+
+ul.hero-slider-blocks li a div.hero-slider-click {
+    height: 14px;
+    width: 14px;
+    
+    margin: 0 2px;
+    
+    background: url(../images/btn-slider.png) no-repeat top;
+}
+
+ul.hero-slider-blocks li a:hover div.hero-slider-click {
+    background-position: 0 -14px;
+}
+
+ul.hero-slider-blocks li a.active div.hero-slider-click {
+    background-position: 0 -28px;
+}
+
+.hero-slider-images {
+    position: relative;
+    z-index: 1;
+    
+    width: 960px;
+    height: 270px;
+    
+    @include box-shadow(0px 0px 50px 20px rgba(0, 0, 0, .5));
+}
+
+.hero-slider-images img {   
+    display: block;
+    background-color: #000;
+    z-index: 0;
+}

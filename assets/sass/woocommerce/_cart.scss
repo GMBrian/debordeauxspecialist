@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Woocommerce Winkelwagen
+   ========================================================================== */
+
+body.woocommerce-cart {
+	
+	.return-to-shop {
+		overflow: hidden;
+		
+		.button {
+			line-height: $button_line_height;
+			float: right;
+		}
+	}
+		
+	.cart-collaterals {
+		
+		.cart_totals {
+			width: 70%;
+			float: right;
+			
+			margin-top: 10px;
+			border-bottom: 1px solid $color_11;
+			
+			h2 {
+				text-align: center;
+				text-transform: uppercase;
+			}
+			
+			table {
+				width: 100%;
+				
+				th {
+					font-weight: bold;
+					padding: 5px 10px 5px 0;
+					border-bottom: 1px solid $color_11;
+					
+					&:first-of-type {
+						border-top: 1px solid $color_11;
+					}
+				}
+				td {
+					padding: 5px 0 5px 10px;
+					border-bottom: 1px solid $color_11;
+					
+					&:first-of-type {
+						border-top: 1px solid $color_11;
+					}
+				}
+			}
+			
+			p small {
+				font-style: italic;
+			}
+		}
+		
+		.shipping_calculator {
+			width: 50%;
+			float: right;
+			clear: right;
+			
+			margin-top: 10px;
+			
+			h2 {
+				text-align: center;
+				text-transform: uppercase;
+				
+				a {
+					text-decoration: none;
+					color: $color_3;
+					
+					&:hover {
+						color: $color_1;
+					}
+				}
+			}
+			
+			.shipping-calculator-form {
+				
+				#calc_shipping_country {
+					width: 100%;
+				}
+				
+				.input-text {
+					width: 100%;
+				}
+				
+				button.button {
+					float: right;
+					clear: right;
+				}
+			}
+		}
+	}
+}

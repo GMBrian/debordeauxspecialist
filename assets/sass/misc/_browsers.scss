@@ -1,0 +1,100 @@
+/**
+ * CSS voor elementen met voorbepaalde klassen, zoals jQuery plugins & WordPress plugins
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.2
+ */
+
+/* Internet Explorer
+   ========================================================================== */
+body.ie {
+	
+	&.v7, 
+	&.v8 {
+		/*background-color: #000 !important;*/
+		
+		
+		input[type='checkbox'] {
+			position: relative !important;
+			height: 15px !important;
+			width: 15px !important;
+
+			background-position: 0 0 !important;
+			background-color: rgba(0, 0, 0, 0) !important;
+			margin: 3px 3px 3px 4px !important;
+			-webkit-appearance: checkbox !important;
+			
+			+ label {
+				display: inline-block;
+				
+				padding-left: 0px !important;
+				margin-top: -5px !important;
+				
+				background-repeat: no-repeat !important;
+				background-position: 0 0 !important;
+				
+				background-image: none !important;
+			}
+		}	
+		
+		input[type='radio'] {
+			position: relative !important;
+			height: 15px !important;
+			width: 15px !important;
+
+			background-position: 0 0 !important;
+			background-color: rgba(0, 0, 0, 0) !important;
+			margin: 3px 3px 3px 4px !important;
+			-webkit-appearance: radio !important;
+			
+			+ label {
+				display: inline-block;
+				
+				padding-left: 0px !important;
+				margin-top: -5px !important;
+				
+				background-repeat: no-repeat !important;
+				background-position: 0 0 !important;
+				
+				background-image: none !important;
+			}
+		}	
+		
+		&.checkout-page {
+			.entry-content form.login {
+				border: 1px solid #888 !important;
+			}
+		}
+	}
+	
+	
+	&.v8 {
+		/*border: 1px #f0f0f0 solid;*/
+	}
+}
+
+/* Chrome
+   ========================================================================== */
+body.chrome {
+	
+}
+
+/* Firefox
+   ========================================================================== */
+body.firefox {
+	
+}
+
+/* Safari
+   ========================================================================== */
+body.safari {
+	
+}
+
+/* Opera
+   ========================================================================== */
+body.opera {
+	
+}

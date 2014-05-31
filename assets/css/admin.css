@@ -1,0 +1,31 @@
+/**
+ * CSS voor de backend van WordPress. Dit bestand wordt alleen geïnclude in de backend van WordPress.
+ * 
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.2
+ * @version     0.3.1
+ */
+/* De Bordeaux Specialist
+   ========================================================================== */
+/* line 13, ../sass/admin.scss */
+#adminmenu .menu-icon-bdx_recipe div.dashicons-before:before {
+  content: "\f159";
+}
+
+/* line 17, ../sass/admin.scss */
+#adminmenu .menu-icon-bdx_testimonial div.dashicons-before:before {
+  content: "\f205";
+}
+
+/* Generiek 
+   ========================================================================== */
+/* line 24, ../sass/admin.scss */
+#adminmenu .toplevel_page_widgets div.wp-menu-image:before {
+  content: "\f136";
+}
+
+/* line 28, ../sass/admin.scss */
+#adminmenu .toplevel_page_nav-menus div.wp-menu-image:before {
+  content: "\f214";
+}

@@ -1,0 +1,41 @@
+/**
+ * CSS voor de styling van controls. Schrijf hier controls zoals buttons & input velden
+ *
+ * @author 		Brian de Geus - Sebwite
+ * @package 	Sebwite/BaseTheme
+ * @since		0.1
+ * @version     0.2
+ */
+
+input[type='submit'],
+input[type='button'],
+.button {
+    @include default-button;
+}
+
+.big-button {
+    @include big-button;
+}
+
+input[type='text'], 
+input[type='password'], 
+input[type='email'] {
+	@include default-field;
+}
+
+textarea {
+	@include default-field;
+}
+
+input[type='checkbox'] {
+    @include default-checkbox;
+}
+
+input[type='radio'] {
+    @include default-radiobutton;
+}
+
+select {
+    height: 30px;
+    line-height: 30px;
+}
